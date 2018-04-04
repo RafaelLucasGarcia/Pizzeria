@@ -1,0 +1,11 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/PizzaShop/packages
+/PizzaShop/PizzaShop/bin
+/PizzaShop/PizzaShop/Content
+/PizzaShop/PizzaShop/fonts
+/PizzaShop/PizzaShop/obj/Debug
+/PizzaShop/PizzaShop/Scripts
+/PizzaShop/.vs/PizzaShop/v15
