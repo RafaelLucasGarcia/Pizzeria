@@ -1,0 +1,165 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C46E68B1-2C1B-445F-B555-49AE492181F5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ClassLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Pizzeria</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="PizzaShop\PizzaShop.sln" />
+    <Content Include="PizzaShop\PizzaShop\Areas\HelpPage\HelpPage.css" />
+    <Content Include="PizzaShop\PizzaShop\favicon.ico" />
+    <Content Include="PizzaShop\PizzaShop\Global.asax" />
+    <Content Include="PizzaShop\PizzaShop\PizzaShop.csproj" />
+    <Content Include="PizzaShop\PizzaShop\PizzaShop.csproj.user" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\objects\pack\pack-f278e38e8e35ae56a09050ef99d4042b33afc422.idx" />
+    <None Include=".git\objects\pack\pack-f278e38e8e35ae56a09050ef99d4042b33afc422.pack" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include="PizzaShop\.vs\config\applicationhost.config" />
+    <None Include="PizzaShop\PizzaShop\ApplicationInsights.config" />
+    <None Include="PizzaShop\PizzaShop\Areas\HelpPage\Views\Help\Api.cshtml" />
+    <None Include="PizzaShop\PizzaShop\Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
+    <None Include="PizzaShop\PizzaShop\Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
+    <None Include="PizzaShop\PizzaShop\Areas\HelpPage\Views\Help\DisplayTemplates\ComplexTypeModelDescription.cshtml" />
+    <None Include="PizzaShop\PizzaShop\Areas\HelpPage\Views\Help\DisplayTemplates\DictionaryModelDescription.cshtml" />
+    <None Include="PizzaShop\PizzaShop\Areas\HelpPage\Views\Help\DisplayTemplates\EnumTypeModelDescription.cshtml" />
+    <None Include="PizzaShop\PizzaShop\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
+    <None Include="PizzaShop\PizzaShop\Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
+    <None Include="PizzaShop\PizzaShop\Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
+    <None Include="PizzaShop\PizzaShop\Areas\HelpPage\Views\Help\DisplayTemplates\KeyValuePairModelDescription.cshtml" />
+    <None Include="PizzaShop\PizzaShop\Areas\HelpPage\Views\Help\DisplayTemplates\ModelDescriptionLink.cshtml" />
+    <None Include="PizzaShop\PizzaShop\Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
+    <None Include="PizzaShop\PizzaShop\Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
+    <None Include="PizzaShop\PizzaShop\Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml" />
+    <None Include="PizzaShop\PizzaShop\Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
+    <None Include="PizzaShop\PizzaShop\Areas\HelpPage\Views\Help\Index.cshtml" />
+    <None Include="PizzaShop\PizzaShop\Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
+    <None Include="PizzaShop\PizzaShop\Areas\HelpPage\Views\Shared\_Layout.cshtml" />
+    <None Include="PizzaShop\PizzaShop\Areas\HelpPage\Views\Web.config" />
+    <None Include="PizzaShop\PizzaShop\Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <None Include="PizzaShop\PizzaShop\packages.config" />
+    <None Include="PizzaShop\PizzaShop\Views\Home\Index.cshtml" />
+    <None Include="PizzaShop\PizzaShop\Views\Shared\Error.cshtml" />
+    <None Include="PizzaShop\PizzaShop\Views\Shared\_Layout.cshtml" />
+    <None Include="PizzaShop\PizzaShop\Views\Web.config" />
+    <None Include="PizzaShop\PizzaShop\Views\_ViewStart.cshtml" />
+    <None Include="PizzaShop\PizzaShop\Web.config" />
+    <None Include="PizzaShop\PizzaShop\Web.Debug.config" />
+    <None Include="PizzaShop\PizzaShop\Web.Release.config" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PizzaShop\PizzaShop\App_Start\BundleConfig.cs" />
+    <Compile Include="PizzaShop\PizzaShop\App_Start\FilterConfig.cs" />
+    <Compile Include="PizzaShop\PizzaShop\App_Start\IdentityConfig.cs" />
+    <Compile Include="PizzaShop\PizzaShop\App_Start\RouteConfig.cs" />
+    <Compile Include="PizzaShop\PizzaShop\App_Start\Startup.Auth.cs" />
+    <Compile Include="PizzaShop\PizzaShop\App_Start\WebApiConfig.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\ApiDescriptionExtensions.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\App_Start\HelpPageConfig.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\Controllers\HelpController.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\HelpPageAreaRegistration.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\HelpPageConfigurationExtensions.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\ModelDescriptions\CollectionModelDescription.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\ModelDescriptions\ComplexTypeModelDescription.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\ModelDescriptions\DictionaryModelDescription.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\ModelDescriptions\EnumTypeModelDescription.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\ModelDescriptions\EnumValueDescription.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\ModelDescriptions\IModelDocumentationProvider.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\ModelDescriptions\KeyValuePairModelDescription.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\ModelDescriptions\ModelDescription.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\ModelDescriptions\ModelNameAttribute.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\ModelDescriptions\ModelNameHelper.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\ModelDescriptions\ParameterAnnotation.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\ModelDescriptions\ParameterDescription.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\ModelDescriptions\SimpleTypeModelDescription.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\Models\HelpPageApiModel.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\SampleGeneration\ImageSample.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\SampleGeneration\InvalidSample.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\SampleGeneration\ObjectGenerator.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\SampleGeneration\TextSample.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Controllers\AccountController.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Controllers\HomeController.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Controllers\ValuesController.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="PizzaShop\PizzaShop\Models\AccountBindingModels.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Models\AccountViewModels.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Models\IdentityModels.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Properties\AssemblyInfo.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Providers\ApplicationOAuthProvider.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Results\ChallengeResult.cs" />
+    <Compile Include="PizzaShop\PizzaShop\Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\refs\tags\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
