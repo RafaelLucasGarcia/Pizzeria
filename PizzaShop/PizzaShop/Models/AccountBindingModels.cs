@@ -35,6 +35,15 @@ namespace PizzaShop.Models
     public class RegisterBindingModel
     {
         [Required]
+        [Display(Name = "Nombre")]
+        public string Nombre { get; set; }
+
+        [Required]
+        [Display(Name = "Apellidos")]
+        public string Apellidos { get; set; }
+
+
+        [Required]
         [Display(Name = "Correo electrónico")]
         public string Email { get; set; }
 
