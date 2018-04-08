@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="stylee.css">
+	
+    <title>Formulario</title>
+	
+</head>
+
+<body>
+    
+	<h1> Formulario de Registro </h1>
+	<form action="http://localhost:49319/api/Account/Register" method="post" class ="form-register">
+	<h2 class = "form-titulo">Pizzeria hermanos charlie</h2>
+	<div class ="coCntenedor-inputs">
+            
+                <label for="name">Name:</label>
+                <input type="text" id="Nombre" name="Nombre" placeholder="&#128100; Nombre" > 
+           
+		   <label for="surname">Apellidos:</label>
+                <input type="text" id="Apellidos" name="Apellidos" placeholder= "Apellidos">
+				
+               <label for="mail">E-mail:</label>
+                <input type="email" id="Email" name="Email" placeholder= "Email">
+                      
+                <label for="pass">contraseña:</label>
+                <input type="password" id="Password" name="Password" placeholder=" Password" >
+				
+                <label for="cpass">Confirmar contraseña:</label>
+                <input type="password" id="ConfirmPassword" name="ConfirmPassword"placeholder="ConfirmPassword">
+
+				<label for="button">Registrar:</label>
+       <input type="submit" value="Send your message"class="btn">
+	 
+    </div>
+        </div>
+        </form> 
+</body>
+</html>
