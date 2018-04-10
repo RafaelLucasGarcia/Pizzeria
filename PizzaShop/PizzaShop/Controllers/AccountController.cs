@@ -16,11 +16,13 @@ using Microsoft.Owin.Security.OAuth;
 using PizzaShop.Models;
 using PizzaShop.Providers;
 using PizzaShop.Results;
+using System.Web.Http.Cors;
 
 namespace PizzaShop.Controllers
 {
     [Authorize]
     [RoutePrefix("api/Account")]
+    [EnableCors(origins: "*", headers: "*", methods: "*", exposedHeaders: "X-Custom-Header")]
     public class AccountController : ApiController
     {
         private const string LocalLoginProvider = "Local";
