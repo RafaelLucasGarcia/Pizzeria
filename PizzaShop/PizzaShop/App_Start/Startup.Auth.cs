@@ -10,9 +10,10 @@ using Microsoft.Owin.Security.OAuth;
 using Owin;
 using PizzaShop.Providers;
 using PizzaShop.Models;
-
+using System.Web.Http.Cors;
 namespace PizzaShop
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*", exposedHeaders: "X-Custom-Header")]
     public partial class Startup
     {
         public static OAuthAuthorizationServerOptions OAuthOptions { get; private set; }
@@ -20,6 +21,7 @@ namespace PizzaShop
         public static string PublicClientId { get; private set; }
 
         // Para obtener más información sobre cómo configurar la autenticación, visite https://go.microsoft.com/fwlink/?LinkId=301864
+        
         public void ConfigureAuth(IAppBuilder app)
         {
             // Configure el contexto de base de datos y el administrador de usuarios para usar una única instancia por solicitud
@@ -30,10 +32,10 @@ namespace PizzaShop
             // y una cookie para almacenar temporalmente información sobre un usuario que inicia sesión con un proveedor de inicio de sesión de terceros
             app.UseCookieAuthentication(new CookieAuthenticationOptions());
             app.UseExternalSignInCookie(DefaultAuthenticationTypes.ExternalCookie);
-            
+
             // Configure la aplicación para el flujo basado en OAuth
-            PublicClientId = "self";
-            OAuthOptions = new OAuthAuthorizationServerOptions
+            PublicClientId = "self";            
+        OAuthOptions = new OAuthAuthorizationServerOptions
             {
                 TokenEndpointPath = new PathString("/Token"),
                 Provider = new ApplicationOAuthProvider(PublicClientId),

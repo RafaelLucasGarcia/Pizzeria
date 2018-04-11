@@ -1,0 +1,21 @@
+1.Crear dll  con el dominio
+	Pizza
+	Ingredientes
+	Comments
+	Interface de repositorios de pizza
+		METODOS
+			Add()
+			Update()
+2.Crear dll servicio de Pizzas
+	Crear interface y clase para PizzaService
+	Dependencias
+		PizzaService(IPizzaRepository)
+3.Crear dll Controlador Pizzas
+	Dependencias IPizzaService
+
+
+Deuda tecnica
+	Intalar y configurar Autofac para web api 2
+Crear un DbContext para pizzas y extraer el UnitOfwrk
+
+4. Hacer la pantalla para agregar pizzas.
