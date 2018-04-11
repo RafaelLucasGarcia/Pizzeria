@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Application
 {
-    public class PizzaService
+    public class PizzaService:IPizzaService
     {
         readonly IRepositoryPizza _repository;
         public PizzaService(IRepositoryPizza repository)
@@ -18,6 +18,11 @@ namespace Application
         {
             return _repository.Add(pizza);  
             
+        }
+
+        public Pizza Update(Pizza pizza)
+        {
+            throw new NotImplementedException();
         }
     }
 }

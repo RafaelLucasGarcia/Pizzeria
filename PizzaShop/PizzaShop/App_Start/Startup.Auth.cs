@@ -10,7 +10,6 @@ using Microsoft.Owin.Security.OAuth;
 using Owin;
 using PizzaShop.Providers;
 using PizzaShop.Models;
-using System.Web.Http.Cors;
 
 namespace PizzaShop
 {

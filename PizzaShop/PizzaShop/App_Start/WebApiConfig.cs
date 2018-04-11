@@ -6,6 +6,9 @@ using System.Web.Http;
 using Microsoft.Owin.Security.OAuth;
 using Newtonsoft.Json.Serialization;
 using System.Web.Http.Cors;
+using Autofac;
+using System.Reflection;
+using Autofac.Integration.WebApi;
 
 namespace PizzaShop
 {
@@ -29,6 +32,14 @@ namespace PizzaShop
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+            var builder = new ContainerBuilder();
+
+
+            builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
+            var container = builder.Build();
+            config.DependencyResolver = new AutofacWebApiDependencyResolver(container);
         }
+
     }
+
 }
