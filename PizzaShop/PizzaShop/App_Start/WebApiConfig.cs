@@ -13,7 +13,7 @@ namespace PizzaShop
     {
         public static void Register(HttpConfiguration config)
         {
-            var cors = new EnableCorsAttribute("localhost", "*", "*");
+            var cors = new EnableCorsAttribute("*", "*", "*");
             config.EnableCors(cors);
             
             // Configuración y servicios de Web API
