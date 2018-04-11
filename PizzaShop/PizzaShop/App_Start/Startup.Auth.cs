@@ -10,6 +10,7 @@ using Microsoft.Owin.Security.OAuth;
 using Owin;
 using PizzaShop.Providers;
 using PizzaShop.Models;
+using System.Web.Http.Cors;
 
 namespace PizzaShop
 {
@@ -30,7 +31,7 @@ namespace PizzaShop
             // y una cookie para almacenar temporalmente información sobre un usuario que inicia sesión con un proveedor de inicio de sesión de terceros
             app.UseCookieAuthentication(new CookieAuthenticationOptions());
             app.UseExternalSignInCookie(DefaultAuthenticationTypes.ExternalCookie);
-
+            
             // Configure la aplicación para el flujo basado en OAuth
             PublicClientId = "self";
             OAuthOptions = new OAuthAuthorizationServerOptions
