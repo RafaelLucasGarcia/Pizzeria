@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\PizzaShop"
   ],
-  "SelectedNode": "\\Pizzeria.sln",
+  "SelectedNode": "\\PizzaShop\\PizzaShop.sln",
   "PreviewInSolutionExplorer": false
 }
