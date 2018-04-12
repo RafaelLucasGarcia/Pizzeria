@@ -1,0 +1,9 @@
+C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Application\bin\Debug\Application.dll
+C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Application\bin\Debug\Application.pdb
+C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Application\bin\Debug\Dominio.dll
+C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Application\bin\Debug\Dominio.pdb
+C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Application\obj\Debug\Application.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Application\obj\Debug\Application.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Application\obj\Debug\Application.csproj.CopyComplete
+C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Application\obj\Debug\Application.dll
+C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Application\obj\Debug\Application.pdb

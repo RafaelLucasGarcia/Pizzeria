@@ -1,0 +1,6 @@
+C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Dominio\bin\Debug\Dominio.dll
+C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Dominio\obj\Debug\Dominio.dll
+C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Dominio\obj\Debug\Dominio.pdb
