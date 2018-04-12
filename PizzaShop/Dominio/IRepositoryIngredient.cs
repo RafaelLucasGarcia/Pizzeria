@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Dominio
 {
-    public class Pizza
+    public interface IRepositoryIngredient
     {
-
+        Ingredient Add(Ingredient ingredient);
     }
 }
