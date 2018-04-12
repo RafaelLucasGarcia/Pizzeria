@@ -12,7 +12,7 @@ namespace Infraestructura
         readonly IUnitOfWork _unitOfWork;
         public RepositoryPizza(IUnitOfWork unitOfWork)
         {
-
+            
         }
         public Pizza Add(Pizza pizza)
         {

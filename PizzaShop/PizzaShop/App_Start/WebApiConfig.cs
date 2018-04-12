@@ -33,8 +33,6 @@ namespace PizzaShop
                 defaults: new { id = RouteParameter.Optional }
             );
             var builder = new ContainerBuilder();
-
-
             builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
             var container = builder.Build();
             config.DependencyResolver = new AutofacWebApiDependencyResolver(container);
