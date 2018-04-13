@@ -290,6 +290,7 @@
     </Compile>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IngredientsController.cs" />
     <Compile Include="Controllers\PizzaController.cs" />
     <Compile Include="Controllers\PizzasController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -317,19 +318,30 @@
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="PizzaShop.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PizzaShop.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PizzaShop.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PizzaShop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PizzaShop.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PizzaShop.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Database1.mdf" />
-    <Content Include="App_Data\Database1_log.ldf">
-      <DependentUpon>Database1.mdf</DependentUpon>
-    </Content>
-    <Content Include="App_Data\Database2.mdf" />
-    <Content Include="App_Data\Database2_log.ldf">
-      <DependentUpon>Database2.mdf</DependentUpon>
+    <Content Include="App_Data\PizzaShop.mdf" />
+    <Content Include="App_Data\PizzaShop_log.ldf">
+      <DependentUpon>PizzaShop.mdf</DependentUpon>
     </Content>
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="BBDD\Model1.Context.tt">
@@ -365,6 +377,16 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="PizzaShop.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PizzaShop.edmx</DependentUpon>
+      <LastGenOutput>PizzaShop.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="PizzaShop.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PizzaShop.edmx</DependentUpon>
+      <LastGenOutput>PizzaShop.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -410,6 +432,13 @@
     </EntityDeploy>
     <Content Include="BBDD\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="PizzaShop.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PizzaShop.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="PizzaShop.edmx.diagram">
+      <DependentUpon>PizzaShop.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
