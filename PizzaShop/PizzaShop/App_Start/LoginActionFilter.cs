@@ -1,4 +1,5 @@
-﻿using Microsoft.Owin.Logging;
+﻿using Autofac.Integration.WebApi;
+using Microsoft.Owin.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;

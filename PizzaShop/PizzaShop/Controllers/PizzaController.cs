@@ -12,6 +12,8 @@ namespace PizzaShop.Controllers
     public class PizzaController : ApiController
     {
         readonly IPizzaService _service;
+        public PizzaController() {
+        }
         public PizzaController(IPizzaService service)
         {
             _service = service;
