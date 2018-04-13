@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using Dominio;
-
+using Infraestructura;
 
 namespace PizzaShop
 {
@@ -22,7 +23,7 @@ namespace PizzaShop
             _unitOfWork.Dispose();
         }
 
-        public void write(PizzaShop pizza)
+        public void Write(Pizza pizza)
         {
             _repository.Write(pizza);
             _unitOfWork.SaveChanges();
@@ -51,10 +52,10 @@ namespace PizzaShop
 
     public interface ILogger:IDisposable
     {
-        void write(Pizza pizza);
+        void Write(Pizza pizza);
     }
 
-    public class PizzaShowContext: DbContext, IunitOfWork, IRepositoryPizza
+    public class PizzaShowContext: DbContext, IUnitOfWork, IRepositoryPizza
     {
         public PizzaShowContext()
         {
