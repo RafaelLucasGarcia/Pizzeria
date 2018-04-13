@@ -5,6 +5,8 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Dominio;
+
 
 namespace Infraestructura
 {
@@ -15,9 +17,10 @@ namespace Infraestructura
         {
             
         }
-        public Pizza Add(Pizza pizza)
+        public Pizza  Add(Pizza pizza)
         {
-            throw new NotImplementedException();
+            _unitOfWork.Add(pizza);
+            return pizza;
         }
 
         public Pizza Update(Pizza pizza)
