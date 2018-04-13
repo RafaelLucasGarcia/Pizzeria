@@ -10,5 +10,6 @@ namespace Dominio
     public interface IRepositoryPizza
     {
         DbSet IDbSet(Type type);
+        Pizza Add(Pizza pizza);
     }
 }

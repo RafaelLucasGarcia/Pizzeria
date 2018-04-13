@@ -23,7 +23,7 @@ namespace PizzaShop
             _unitOfWork.Dispose();
         }
 
-        public void Write(Pizza pizza)
+        public void Write(PizzaContext pizza)
         {
             _repository.Write(pizza);
             _unitOfWork.SaveChanges();
@@ -32,7 +32,7 @@ namespace PizzaShop
 
     public interface IRepository
     {
-        void Write(Pizza pizza);
+        void Write(PizzaContext pizza);
     }
 
     public class Repository : IRepository
@@ -43,7 +43,7 @@ namespace PizzaShop
             _repositoryPizza = repositoryPizza;
         }
 
-        public void Write(PizzaShowContext pizza)
+        public void Write(PizzaContext pizza)
         {
             var set = _repositoryPizza.IDbSet(typeof(Pizza));
             set.Add(pizza);
@@ -52,21 +52,6 @@ namespace PizzaShop
 
     public interface ILogger:IDisposable
     {
-        void Write(Pizza pizza);
+        void Write(PizzaContext pizza);
     }
-
-    public class PizzaShowContext: DbContext, IUnitOfWork, IRepositoryPizza
-    {
-        public PizzaShowContext()
-        {
-
-        }
-        public IDbSet<Pizza> Pizza { get; set; }
-        public DbSet IDbSet(Type type)
-        {
-            return this.Set(type);
-        }
-    }
-
-
 }

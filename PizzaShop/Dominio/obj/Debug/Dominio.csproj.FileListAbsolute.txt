@@ -4,3 +4,7 @@ C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Dominio\obj\Debug\Dominio.cspro
 C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Dominio\obj\Debug\Dominio.dll
 C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Dominio\obj\Debug\Dominio.pdb
+C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Dominio\bin\Debug\EntityFramework.dll
+C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Dominio\bin\Debug\EntityFramework.xml
+C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Dominio\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Dominio\obj\Debug\Dominio.csproj.CopyComplete

@@ -20,16 +20,14 @@ namespace PizzaShop.App_Start
             _logger = logger;
         }
 
-        public Task OnActionExecutingAsync(HttpActionContext actionContext, CancellationToken cancellationToken)
-        {
-            _logger.WriteError(actionContext.ActionDescriptor.ActionName);
-            return Task.FromResult(0);
-        }
-
         public Task OnActionExecutedAsync(HttpActionExecutedContext actionExecutedContext, CancellationToken cancellationToken)
         {
-            _logger.WriteError(actionExecutedContext.ActionContext.ActionDescriptor.ActionName);
-            return Task.FromResult(0);
+            throw new NotImplementedException();
+        }
+
+        public Task OnActionExecutingAsync(HttpActionContext actionContext, CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
         }
     }
 }

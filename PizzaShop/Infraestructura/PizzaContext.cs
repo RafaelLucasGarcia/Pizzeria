@@ -14,16 +14,16 @@ namespace Infraestructura
         {
            
         }
-        public IDbSet<Pizza> Pizzas { get; set; }
+        public IDbSet<Pizza> Pizza { get; set; }
 
         public Pizza Add(Pizza pizza)
         {
             throw new NotImplementedException();
         }
 
-        public Pizza Update(Pizza pizza)
+        public DbSet IDbSet(Type type)
         {
-            throw new NotImplementedException();
+            return this.Set(type);
         }
     }
 }

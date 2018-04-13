@@ -64,7 +64,6 @@
   <ItemGroup>
     <Compile Include="IUnitOfWork.cs" />
     <Compile Include="PizzaContext.cs" />
-    <Compile Include="RepositoryIngredient.cs" />
     <Compile Include="RepositoryPizza.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
