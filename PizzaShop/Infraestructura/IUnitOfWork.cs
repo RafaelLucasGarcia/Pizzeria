@@ -10,6 +10,5 @@ namespace Infraestructura
     public interface IUnitOfWork:IDisposable
     {
         int SaveChanges();
-        Pizza Add(Pizza pizza);
     }
 }

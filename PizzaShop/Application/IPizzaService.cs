@@ -10,6 +10,5 @@ namespace Application
     public interface IPizzaService
     {
         Pizza Add(Pizza pizza);
-        Pizza Update(Pizza pizza);
     }
 }

@@ -15,11 +15,7 @@ namespace Infraestructura
            
         }
         public IDbSet<Pizza> Pizza { get; set; }
-
-        public Pizza Add(Pizza pizza)
-        {
-            throw new NotImplementedException();
-        }
+        public IDbSet<Ingredient> Ingredient { get; set; }
 
         public DbSet IDbSet(Type type)
         {

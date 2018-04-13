@@ -35,7 +35,7 @@ namespace PizzaShop
 
             // Configure la aplicación para el flujo basado en OAuth
             PublicClientId = "self";            
-        OAuthOptions = new OAuthAuthorizationServerOptions
+            OAuthOptions = new OAuthAuthorizationServerOptions
             {
                 TokenEndpointPath = new PathString("/Token"),
                 Provider = new ApplicationOAuthProvider(PublicClientId),

@@ -214,7 +214,6 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
-    <Compile Include="App_Start\LoginActionFilter.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
@@ -298,7 +297,21 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Logger.cs" />
+    <Compile Include="InfraestructuraPizzaContext.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InfraestructuraPizzaContext.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfraestructuraPizzaContext.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InfraestructuraPizzaContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfraestructuraPizzaContext.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InfraestructuraPizzaContext.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -331,6 +344,10 @@
     <Content Include="App_Data\Database2_log.ldf">
       <DependentUpon>Database2.mdf</DependentUpon>
     </Content>
+    <Content Include="App_Data\Infraestructurapizzas.mdf" />
+    <Content Include="App_Data\Infraestructurapizzas_log.ldf">
+      <DependentUpon>Infraestructurapizzas.mdf</DependentUpon>
+    </Content>
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="BBDD\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -356,6 +373,16 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="InfraestructuraPizzaContext.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>InfraestructuraPizzaContext.edmx</DependentUpon>
+      <LastGenOutput>InfraestructuraPizzaContext.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="InfraestructuraPizzaContext.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>InfraestructuraPizzaContext.edmx</DependentUpon>
+      <LastGenOutput>InfraestructuraPizzaContext.cs</LastGenOutput>
+    </Content>
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
@@ -411,6 +438,13 @@
     <Content Include="BBDD\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
+    <EntityDeploy Include="InfraestructuraPizzaContext.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>InfraestructuraPizzaContext.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="InfraestructuraPizzaContext.edmx.diagram">
+      <DependentUpon>InfraestructuraPizzaContext.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -422,7 +456,9 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
