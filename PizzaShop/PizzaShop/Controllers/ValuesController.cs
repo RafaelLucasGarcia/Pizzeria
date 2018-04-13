@@ -19,6 +19,8 @@ namespace PizzaShop.Controllers
         // GET api/values/5
         public string Get(int id)
         {
+            var pizza = new Pizza() { Id = Guid.NewGuid(), Name = "Carbonara" };
+            _loger.write(pizza);
             return "value";
         }
 
@@ -35,6 +37,11 @@ namespace PizzaShop.Controllers
         // DELETE api/values/5
         public void Delete(int id)
         {
+        }
+        protected override void Dispose(bool disposing)
+        {
+            _loger ???
+            base.Dispose.(disposing);
         }
     }
 }
