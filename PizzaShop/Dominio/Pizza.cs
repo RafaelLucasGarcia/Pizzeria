@@ -10,6 +10,7 @@ namespace Dominio
     {
         public int ID { get; set; }
         public string Name { get; }
+        public byte Imagen { get; }
         public virtual List<Ingredient> Ingredients { get; }
         public virtual List<Comments> Comments { get; }
 

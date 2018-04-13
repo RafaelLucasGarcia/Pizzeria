@@ -10,5 +10,6 @@ namespace Dominio
     {
         Pizza Add(Pizza pizza);
         Pizza Update(Pizza pizza);
+        void Save();
     }
 }
