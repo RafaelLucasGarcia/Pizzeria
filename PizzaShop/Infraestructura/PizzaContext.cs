@@ -8,12 +8,13 @@ using System.Threading.Tasks;
 
 namespace Infraestructura
 {
-    public class PizzaContext:DbContext, IUnitOfWork, IRepositoryPizza
+    public class PizzaContext : DbContext, IUnitOfWork, IRepositoryPizza
     {
-        public PizzaContext()
+        public PizzaContext() : base("PizzasEntities")
         {
-           
+
         }
+
         public IDbSet<Pizza> Pizza { get; set; }
         public IDbSet<Ingredient> Ingredient { get; set; }
 

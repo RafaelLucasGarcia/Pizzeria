@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application
+/*namespace Application
 {
     public class PizzaService:IPizzaService
     {
@@ -23,4 +23,4 @@ namespace Application
             return pizza;
         }
     }
-}
+}*/
