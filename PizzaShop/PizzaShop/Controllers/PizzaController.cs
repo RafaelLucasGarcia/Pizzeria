@@ -1,4 +1,4 @@
-﻿using Application;
+﻿//using Application;
 using Dominio;
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using System.Web.Http;
 
 namespace PizzaShop.Controllers
 {
-    public class PizzaController : ApiController
+    /*public class PizzaController : ApiController
     {
         readonly IPizzaService _service;
         public PizzaController(IPizzaService service)
@@ -21,5 +21,5 @@ namespace PizzaShop.Controllers
             return _service.Add(pizza);
         }
         
-    }
+    }*/
 }

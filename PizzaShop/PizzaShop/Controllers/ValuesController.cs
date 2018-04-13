@@ -4,12 +4,20 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Dominio;
+using Infraestructura;
+
 
 namespace PizzaShop.Controllers
 {
-    [Authorize]
+    [AllowAnonymous]
     public class ValuesController : ApiController
     {
+        readonly ILogger _logger;
+        public ValuesController(ILogger logger)
+        {
+            _logger = logger;
+        }
         // GET api/values
         public IEnumerable<string> Get()
         {
@@ -19,8 +27,10 @@ namespace PizzaShop.Controllers
         // GET api/values/5
         public string Get(int id)
         {
-            var pizza = new Pizza() { Id = Guid.NewGuid(), Name = "Carbonara" };
-            _loger.write(pizza);
+            var pizza = new Pizza() { Id = Guid.NewGuid(), Name = "Margarita" };
+            pizza.Comments.Add(new Comments() { Id = Guid.NewGuid(), Name = "De puta madre.", UserName = "Pedro" });
+            _logger.Write(pizza);
+
             return "value";
         }
 
@@ -38,10 +48,11 @@ namespace PizzaShop.Controllers
         public void Delete(int id)
         {
         }
+
         protected override void Dispose(bool disposing)
         {
-            _loger ???
-            base.Dispose.(disposing);
+            _logger.Dispose();
+            base.Dispose(disposing);
         }
     }
 }

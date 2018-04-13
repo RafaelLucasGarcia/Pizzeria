@@ -63,8 +63,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IUnitOfWork.cs" />
+    <Compile Include="Logger.cs" />
     <Compile Include="PizzaContext.cs" />
-    <Compile Include="RepositoryPizza.cs" />
+    <Compile Include="Repository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

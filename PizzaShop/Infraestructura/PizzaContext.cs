@@ -8,22 +8,19 @@ using System.Threading.Tasks;
 
 namespace Infraestructura
 {
-    public class PizzaContext:DbContext, IUnitOfWork, IRepositoryPizza
+    public class PizzaContext : DbContext, IUnitOfWork, IRepositoryPizza
     {
-        public PizzaContext()
+        public PizzaContext() : base("PizzasEntities")
         {
-           
-        }
-        public IDbSet<Pizza> Pizzas { get; set; }
 
-        public Pizza Add(Pizza pizza)
-        {
-            throw new NotImplementedException();
         }
 
-        public Pizza Update(Pizza pizza)
+        public IDbSet<Pizza> Pizza { get; set; }
+        public IDbSet<Ingredient> Ingredient { get; set; }
+
+        public DbSet IDbSet(Type type)
         {
-            throw new NotImplementedException();
+            return this.Set(type);
         }
     }
 }

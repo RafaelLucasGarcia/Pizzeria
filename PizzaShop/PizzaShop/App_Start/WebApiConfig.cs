@@ -9,6 +9,8 @@ using System.Web.Http.Cors;
 using Autofac;
 using System.Reflection;
 using Autofac.Integration.WebApi;
+using Infraestructura;
+using Dominio;
 
 namespace PizzaShop
 {
@@ -33,7 +35,19 @@ namespace PizzaShop
                 defaults: new { id = RouteParameter.Optional }
             );
             var builder = new ContainerBuilder();
+
+            //Conseguir configuración API
+            config = GlobalConfiguration.Configuration;
+
+            //Registrat web API controller
             builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
+
+
+            builder.RegisterType<Logger>().As<ILogger>().InstancePerRequest();
+            builder.RegisterType<Repository>().As<IRepository>().InstancePerRequest();
+            builder.RegisterType<PizzaContext>().As<IRepositoryPizza>().As<IUnitOfWork>().InstancePerRequest();
+
+            //Inyectar solucionador de dependencia a ser Autofac
             var container = builder.Build();
             config.DependencyResolver = new AutofacWebApiDependencyResolver(container);
         }

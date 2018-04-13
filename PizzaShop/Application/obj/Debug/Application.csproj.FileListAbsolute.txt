@@ -7,3 +7,6 @@ C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Application\obj\Debug\Applicati
 C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Application\obj\Debug\Application.csproj.CopyComplete
 C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Application\obj\Debug\Application.dll
 C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Application\obj\Debug\Application.pdb
+C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Application\bin\Debug\EntityFramework.dll
+C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Application\bin\Debug\EntityFramework.xml
+C:\Users\Usuario\Source\Repos\Pizzeria\PizzaShop\Application\bin\Debug\es\EntityFramework.resources.dll

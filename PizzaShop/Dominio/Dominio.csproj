@@ -44,7 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Comments.cs" />
+    <Compile Include="ILogger.cs" />
     <Compile Include="Ingredient.cs" />
+    <Compile Include="IRepository.cs" />
     <Compile Include="IRepositoryPizza.cs" />
     <Compile Include="Pizza.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
