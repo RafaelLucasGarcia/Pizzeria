@@ -5,8 +5,10 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using Dominio;
+using Infraestructura;
 
-namespace PizzaShopJan.Controllers
+
+namespace PizzaShop.Controllers
 {
     [AllowAnonymous]
     public class ValuesController : ApiController
@@ -25,7 +27,7 @@ namespace PizzaShopJan.Controllers
         // GET api/values/5
         public string Get(int id)
         {
-            var pizza = new Pizza() { Id = Guid.NewGuid(), Name = "Jan y Antonio sus quiero" };
+            var pizza = new Pizza() { Id = Guid.NewGuid(), Name = "Margarita" };
             pizza.Comments.Add(new Comments() { Id = Guid.NewGuid(), Name = "De puta madre.", UserName = "Pedro" });
             _logger.Write(pizza);
 
