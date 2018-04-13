@@ -7,9 +7,11 @@ using System.Threading.Tasks;
 
 namespace Infraestructura
 {
-    public class RepositoryPizza : IRepositoryPizza
+    public class RepositoryPizza : IRepositoryPizza, IDisposable
     {
         readonly IUnitOfWork _unitOfWork;
+        private bool disposed = false;
+
         public RepositoryPizza(IUnitOfWork unitOfWork)
         {
 
@@ -27,7 +29,22 @@ namespace Infraestructura
         {
             _unitOfWork.SaveChanges();
         }
+        public void Dispose(bool disposing)
+        {
+            if (!this.disposed)
+            {
+                if (disposing)
+                {
+                    _unitOfWork.Dispose();                    
+                }
+}
+            this.disposed = true;
+        }
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
 
-        
     }
 }
