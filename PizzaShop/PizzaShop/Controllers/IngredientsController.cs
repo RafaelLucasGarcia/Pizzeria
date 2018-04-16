@@ -20,14 +20,14 @@ namespace PizzaShop.Controllers
         // GET: api/Ingredients
         public IQueryable<Ingredient> GetIngredients()
         {
-            return db.Ingredients;
+            return db.Ingredientes;
         }
 
         // GET: api/Ingredients/5
         [ResponseType(typeof(Ingredient))]
         public IHttpActionResult GetIngredient(int id)
         {
-            Ingredient ingredient = db.Ingredients.Find(id);
+            Ingredient ingredient = db.Ingredientes.Find(id);
             if (ingredient == null)
             {
                 return NotFound();
@@ -80,7 +80,7 @@ namespace PizzaShop.Controllers
                 return BadRequest(ModelState);
             }
 
-            db.Ingredients.Add(ingredient);
+            db.Ingredientes.Add(ingredient);
             db.SaveChanges();
 
             return CreatedAtRoute("DefaultApi", new { id = ingredient.ID }, ingredient);
@@ -90,13 +90,13 @@ namespace PizzaShop.Controllers
         [ResponseType(typeof(Ingredient))]
         public IHttpActionResult DeleteIngredient(int id)
         {
-            Ingredient ingredient = db.Ingredients.Find(id);
+            Ingredient ingredient = db.Ingredientes.Find(id);
             if (ingredient == null)
             {
                 return NotFound();
             }
 
-            db.Ingredients.Remove(ingredient);
+            db.Ingredientes.Remove(ingredient);
             db.SaveChanges();
 
             return Ok(ingredient);
@@ -113,7 +113,7 @@ namespace PizzaShop.Controllers
 
         private bool IngredientExists(int id)
         {
-            return db.Ingredients.Count(e => e.ID == id) > 0;
+            return db.Ingredientes.Count(e => e.ID == id) > 0;
         }
     }
 }

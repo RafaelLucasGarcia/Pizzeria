@@ -9,17 +9,17 @@ namespace Dominio
     public class Pizza
     {
         public int ID { get; set; }
-        public string Name { get; }
-        public byte Imagen { get; }
-        public virtual List<Ingredient> Ingredients { get; }
-        public virtual List<Comments> Comments { get; }
+        public string Name { get; set; }
+        public byte Imagen { get; set; }
+        public virtual List<Ingredient> Ingredients { get; set; }
+        public virtual List<Comments> Comments { get; set; }
 
-        public Pizza(string name, List<Ingredient> ingredients, List<Comments> comments) {
+        /*public Pizza(string name, List<Ingredient> ingredients, List<Comments> comments) {
             Name = name;
             Ingredients = ingredients;
             Comments = comments;
 
-        }
+        }*/
 
     
 

@@ -7,12 +7,13 @@ using Dominio;
 
 namespace Infraestructura
 {
-    class UnitOfWork : IUnitOfWork { 
+    public class UnitOfWork : IUnitOfWork { 
         private PizzaShopContext context = new PizzaShopContext();
         private GenericRepository<Ingredient> ingredientRepository;
         private GenericRepository<Pizza> pizzaRepository;
         private GenericRepository<Comments> commentRepository;
 
+        
         public GenericRepository<Ingredient> IngredientesRepository
         {
             get
@@ -51,10 +52,7 @@ namespace Infraestructura
             }
         }
 
-        public void Save()
-        {
-            context.SaveChanges();
-        }
+        
 
         private bool disposed = false;
 
@@ -76,9 +74,9 @@ namespace Infraestructura
             GC.SuppressFinalize(this);
         }
 
-        public int SaveChanges()
+        public int  SaveChanges()
         {
-            throw new NotImplementedException();
+            return context.SaveChanges();
         }
     }
 }

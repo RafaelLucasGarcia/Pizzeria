@@ -18,6 +18,6 @@ namespace Infraestructura
         public IDbSet<Ingredient> Ingredientes { get; set; }
         public IDbSet<Comments> Comentarios { get; set; }
 
-        public System.Data.Entity.DbSet<Dominio.Ingredient> Ingredients { get; set; }
+        //public System.Data.Entity.DbSet<Dominio.Ingredient> Ingredients { get; set; }
     }
 }

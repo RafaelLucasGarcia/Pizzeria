@@ -10,9 +10,9 @@ namespace Dominio
     public class Comments
     {
         public int ID { get; set; }
-        public string Comentario { get; }
-        public int Valoracion { get; }
-        public bool Validado { get; }
+        public string Comentario { get; set; }
+        public int Valoracion { get; set; }
+        public bool Validado { get; set; }
         //public ApplicationUser Usuario { get; }
     }
 }

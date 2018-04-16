@@ -15,19 +15,22 @@ namespace PizzaShop.Controllers
 {
     public class PizzasController : ApiController
     {
-        private PizzaShopContext db = new PizzaShopContext();
+        //private PizzaShopContext db = new PizzaShopContext();
+        private UnitOfWork _unitOfWork = new UnitOfWork();
 
         // GET: api/Pizzas
-        public IQueryable<Pizza> GetPizzas()
+        public IEnumerable<Pizza> GetPizzas()
         {
-            return db.Pizzas;
+            
+            var lista =  _unitOfWork.PizzaRepository.Get();
+            return lista;
         }
 
         // GET: api/Pizzas/5
         [ResponseType(typeof(Pizza))]
         public IHttpActionResult GetPizza(int id)
         {
-            Pizza pizza = db.Pizzas.Find(id);
+            Pizza pizza = _unitOfWork.PizzaRepository.GetByID(id);
             if (pizza == null)
             {
                 return NotFound();
@@ -50,11 +53,12 @@ namespace PizzaShop.Controllers
                 return BadRequest();
             }
 
-            db.Entry(pizza).State = EntityState.Modified;
+            //db.Entry(pizza).State = EntityState.Modified;
+            _unitOfWork.PizzaRepository.Insert(pizza);
 
             try
             {
-                db.SaveChanges();
+                _unitOfWork.SaveChanges();
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -80,8 +84,9 @@ namespace PizzaShop.Controllers
                 return BadRequest(ModelState);
             }
 
-            db.Pizzas.Add(pizza);
-            db.SaveChanges();
+            
+            _unitOfWork.PizzaRepository.Insert(pizza);
+            _unitOfWork.SaveChanges();
 
             return CreatedAtRoute("DefaultApi", new { id = pizza.ID }, pizza);
         }
@@ -90,14 +95,14 @@ namespace PizzaShop.Controllers
         [ResponseType(typeof(Pizza))]
         public IHttpActionResult DeletePizza(int id)
         {
-            Pizza pizza = db.Pizzas.Find(id);
+            Pizza pizza = _unitOfWork.PizzaRepository.GetByID(id);
             if (pizza == null)
             {
                 return NotFound();
             }
 
-            db.Pizzas.Remove(pizza);
-            db.SaveChanges();
+            _unitOfWork.PizzaRepository.Delete(pizza);
+            _unitOfWork.SaveChanges();
 
             return Ok(pizza);
         }
@@ -106,14 +111,14 @@ namespace PizzaShop.Controllers
         {
             if (disposing)
             {
-                db.Dispose();
+                _unitOfWork.Dispose();
             }
             base.Dispose(disposing);
         }
 
         private bool PizzaExists(int id)
         {
-            return db.Pizzas.Count(e => e.ID == id) > 0;
+            return false;// _unitOfWork.PizzaRepository.Count(e => e.ID == id) > 0;
         }
     }
 }

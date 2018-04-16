@@ -9,12 +9,12 @@ namespace Dominio
     public class Ingredient
     {
         public int ID { get; set; }
-        public string Name { get; }
-        public decimal Cost { get; }
+        public string Name { get; set; }
+        public decimal Cost { get; set; }
 
-        public Ingredient(string name, decimal cost) {
+        /*public Ingredient(string name, decimal cost) {
             Name = name;
             Cost = cost;
-        }
+        }*/
     }
 }
