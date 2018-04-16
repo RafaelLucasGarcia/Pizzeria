@@ -12,7 +12,7 @@
             </md-input-container>
             <md-input-container class="md-block">
                 <label>Contraseña</label>
-                <input required type="password" name="password" ng-model="$ctrl.user.password" minlength="6" />
+                <input required type="text" name="password" ng-model="$ctrl.user.password" minlength="6" />
                 <div ng-messages="userForm.password.$error" md-auto-hide="false">
                     <div ng-message="minlength">
                         Tiene que tener al menos 6 carácteres

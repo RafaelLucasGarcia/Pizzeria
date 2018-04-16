@@ -14,8 +14,11 @@
     <md-button class="md-primary" ui-sref="pizzalist" ng-click="$ctrl.closeSidenav()">
       Mostrar pizzas
     </md-button>
-    <md-button class="md-primary" ui-sref="addpizza" ng-click="$ctrl.closeSidenav()">
+    <md-button class="md-primary" ui-sref="addpizza" data-ng-hide="!isAuth" ng-click="$ctrl.closeSidenav()">
       Añadir pizza
+    </md-button>
+    <md-button class="md-primary" ui-sref="logout" data-ng-hide="!isAuth" ng-click="$ctrl.closeSidenav()">
+      Logout
     </md-button>
   </md-content>
 </md-sidenav>

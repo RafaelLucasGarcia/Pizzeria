@@ -33,7 +33,7 @@
 
             <md-input-container class="md-block">
                 <label>Contraseña</label>
-                <input required id="password" type="password" name="password" ng-model="$ctrl.user.password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                <input required id="password" type="text" name="password" ng-model="$ctrl.user.password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
                     onchange="if(this.checkValidity()) form.password_two.pattern = this.value;" />
                 <div ng-messages="userForm.password.$error" md-auto-hide="false">
                     <div ng-message="pattern">
@@ -44,7 +44,7 @@
 
             <md-input-container class="md-block">
                 <label>Repetir contraseña</label>
-                <input required id="password_two" type="password" name="confirmPassword" ng-model="$ctrl.user.confirmPassword" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Las contraseñas no coinciden' : '');"/>
+                <input required id="password_two" type="text" name="confirmPassword" ng-model="$ctrl.user.confirmPassword" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Las contraseñas no coinciden' : '');"/>
             </md-input-container>
 
 

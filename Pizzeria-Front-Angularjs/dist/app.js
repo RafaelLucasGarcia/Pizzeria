@@ -34628,7 +34628,7 @@ function pattern(struct) {
     };
 }
 exports.pattern = pattern;
-
+//# sourceMappingURL=hof.js.map
 });
 
 unwrapExports(hof);
@@ -34716,7 +34716,7 @@ var Glob = /** @class */ (function () {
     return Glob;
 }());
 exports.Glob = Glob;
-
+//# sourceMappingURL=glob.js.map
 });
 
 unwrapExports(glob);
@@ -34835,7 +34835,7 @@ var StateObject = /** @class */ (function () {
     return StateObject;
 }());
 exports.StateObject = StateObject;
-
+//# sourceMappingURL=stateObject.js.map
 });
 
 unwrapExports(stateObject);
@@ -34887,7 +34887,7 @@ exports.isInjectable = isInjectable;
  * It is probably a Promise if it's an object, and it has a `then` property which is a Function
  */
 exports.isPromise = hof.and(exports.isObject, hof.pipe(hof.prop('then'), exports.isFunction));
-
+//# sourceMappingURL=predicates.js.map
 });
 
 unwrapExports(predicates);
@@ -34903,7 +34903,7 @@ var services = {
     $injector: undefined,
 };
 exports.services = services;
-
+//# sourceMappingURL=coreservices.js.map
 });
 
 unwrapExports(coreservices);
@@ -35471,7 +35471,7 @@ exports.silenceUncaughtInPromise = function (promise) {
 exports.silentRejection = function (error) {
     return exports.silenceUncaughtInPromise(coreservices.services.$q.reject(error));
 };
-
+//# sourceMappingURL=common.js.map
 });
 
 unwrapExports(common$1);
@@ -35528,7 +35528,7 @@ var Queue = /** @class */ (function () {
     return Queue;
 }());
 exports.Queue = Queue;
-
+//# sourceMappingURL=queue.js.map
 });
 
 unwrapExports(queue);
@@ -35623,7 +35623,7 @@ var Rejection = /** @class */ (function () {
     return Rejection;
 }());
 exports.Rejection = Rejection;
-
+//# sourceMappingURL=rejectFactory.js.map
 });
 
 unwrapExports(rejectFactory);
@@ -35874,7 +35874,7 @@ exports.Trace = Trace;
  */
 var trace = new Trace();
 exports.trace = trace;
-
+//# sourceMappingURL=trace.js.map
 });
 
 unwrapExports(trace_1);
@@ -35895,7 +35895,7 @@ var TransitionHookScope;
     TransitionHookScope[TransitionHookScope["TRANSITION"] = 0] = "TRANSITION";
     TransitionHookScope[TransitionHookScope["STATE"] = 1] = "STATE";
 })(TransitionHookScope = exports.TransitionHookScope || (exports.TransitionHookScope = {}));
-
+//# sourceMappingURL=interface.js.map
 });
 
 unwrapExports(_interface);
@@ -36049,7 +36049,7 @@ var TargetState = /** @class */ (function () {
     return TargetState;
 }());
 exports.TargetState = TargetState;
-
+//# sourceMappingURL=targetState.js.map
 });
 
 unwrapExports(targetState);
@@ -36279,7 +36279,7 @@ var TransitionHook = /** @class */ (function () {
     return TransitionHook;
 }());
 exports.TransitionHook = TransitionHook;
-
+//# sourceMappingURL=transitionHook.js.map
 });
 
 unwrapExports(transitionHook);
@@ -36443,7 +36443,7 @@ function makeEvent(registry, transitionService, eventType) {
     return hookRegistrationFn;
 }
 exports.makeEvent = makeEvent;
-
+//# sourceMappingURL=hookRegistry.js.map
 });
 
 unwrapExports(hookRegistry);
@@ -36567,7 +36567,7 @@ function tupleSort(reverseDepthSort) {
         return depthDelta !== 0 ? depthDelta : r.hook.priority - l.hook.priority;
     };
 }
-
+//# sourceMappingURL=hookBuilder.js.map
 });
 
 unwrapExports(hookBuilder);
@@ -36714,7 +36714,7 @@ function ArrayType(type, mode) {
         $arrayMode: mode,
     });
 }
-
+//# sourceMappingURL=paramType.js.map
 });
 
 unwrapExports(paramType);
@@ -36919,7 +36919,7 @@ var Param = /** @class */ (function () {
     return Param;
 }());
 exports.Param = Param;
-
+//# sourceMappingURL=param.js.map
 });
 
 unwrapExports(param);
@@ -37005,7 +37005,7 @@ var PathNode = /** @class */ (function () {
     return PathNode;
 }());
 exports.PathNode = PathNode;
-
+//# sourceMappingURL=pathNode.js.map
 });
 
 unwrapExports(pathNode);
@@ -37184,7 +37184,7 @@ var PathUtils = /** @class */ (function () {
     return PathUtils;
 }());
 exports.PathUtils = PathUtils;
-
+//# sourceMappingURL=pathUtils.js.map
 });
 
 unwrapExports(pathUtils);
@@ -37324,7 +37324,7 @@ var Resolvable = /** @class */ (function () {
     return Resolvable;
 }());
 exports.Resolvable = Resolvable;
-
+//# sourceMappingURL=resolvable.js.map
 });
 
 unwrapExports(resolvable);
@@ -37344,7 +37344,7 @@ exports.resolvePolicies = {
         RXWAIT: 'RXWAIT',
     },
 };
-
+//# sourceMappingURL=interface.js.map
 });
 
 unwrapExports(_interface$2);
@@ -37551,7 +37551,7 @@ var UIInjectorImpl = /** @class */ (function () {
     };
     return UIInjectorImpl;
 }());
-
+//# sourceMappingURL=resolveContext.js.map
 });
 
 unwrapExports(resolveContext);
@@ -38199,7 +38199,7 @@ var Transition = /** @class */ (function () {
     return Transition;
 }());
 exports.Transition = Transition;
-
+//# sourceMappingURL=transition.js.map
 });
 
 unwrapExports(transition);
@@ -38351,7 +38351,7 @@ function joinNeighborsR(acc, x) {
     return common$1.pushR(acc, x);
 }
 exports.joinNeighborsR = joinNeighborsR;
-
+//# sourceMappingURL=strings.js.map
 });
 
 unwrapExports(strings);
@@ -38371,7 +38371,7 @@ __export(predicates);
 __export(queue);
 __export(strings);
 __export(trace_1);
-
+//# sourceMappingURL=index.js.map
 });
 
 unwrapExports(common);
@@ -38533,7 +38533,7 @@ function initDefaultTypes() {
     });
 }
 initDefaultTypes();
-
+//# sourceMappingURL=paramTypes.js.map
 });
 
 unwrapExports(paramTypes);
@@ -38582,7 +38582,7 @@ var StateParams = /** @class */ (function () {
     return StateParams;
 }());
 exports.StateParams = StateParams;
-
+//# sourceMappingURL=stateParams.js.map
 });
 
 unwrapExports(stateParams);
@@ -38597,7 +38597,7 @@ __export(param);
 __export(paramTypes);
 __export(stateParams);
 __export(paramType);
-
+//# sourceMappingURL=index.js.map
 });
 
 unwrapExports(params);
@@ -38611,7 +38611,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /** @module path */ /** for typedoc */
 __export(pathNode);
 __export(pathUtils);
-
+//# sourceMappingURL=index.js.map
 });
 
 unwrapExports(path);
@@ -38626,7 +38626,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __export(_interface$2);
 __export(resolvable);
 __export(resolveContext);
-
+//# sourceMappingURL=index.js.map
 });
 
 unwrapExports(resolve);
@@ -38911,7 +38911,7 @@ var StateBuilder = /** @class */ (function () {
     return StateBuilder;
 }());
 exports.StateBuilder = StateBuilder;
-
+//# sourceMappingURL=stateBuilder.js.map
 });
 
 unwrapExports(stateBuilder);
@@ -38982,7 +38982,7 @@ var StateMatcher = /** @class */ (function () {
     return StateMatcher;
 }());
 exports.StateMatcher = StateMatcher;
-
+//# sourceMappingURL=stateMatcher.js.map
 });
 
 unwrapExports(stateMatcher);
@@ -39079,7 +39079,7 @@ var StateQueueManager = /** @class */ (function () {
     return StateQueueManager;
 }());
 exports.StateQueueManager = StateQueueManager;
-
+//# sourceMappingURL=stateQueueManager.js.map
 });
 
 unwrapExports(stateQueueManager);
@@ -39240,7 +39240,7 @@ var StateRegistry = /** @class */ (function () {
     return StateRegistry;
 }());
 exports.StateRegistry = StateRegistry;
-
+//# sourceMappingURL=stateRegistry.js.map
 });
 
 unwrapExports(stateRegistry);
@@ -39766,7 +39766,7 @@ var UrlMatcher = /** @class */ (function () {
     return UrlMatcher;
 }());
 exports.UrlMatcher = UrlMatcher;
-
+//# sourceMappingURL=urlMatcher.js.map
 });
 
 unwrapExports(urlMatcher);
@@ -39895,7 +39895,7 @@ var UrlMatcherFactory = /** @class */ (function () {
     return UrlMatcherFactory;
 }());
 exports.UrlMatcherFactory = UrlMatcherFactory;
-
+//# sourceMappingURL=urlMatcherFactory.js.map
 });
 
 unwrapExports(urlMatcherFactory);
@@ -40109,7 +40109,7 @@ var BaseUrlRule = /** @class */ (function () {
     return BaseUrlRule;
 }());
 exports.BaseUrlRule = BaseUrlRule;
-
+//# sourceMappingURL=urlRule.js.map
 });
 
 unwrapExports(urlRule);
@@ -40426,7 +40426,7 @@ function getHandlerFn(handler) {
     }
     return predicates.isFunction(handler) ? handler : hof.val(handler);
 }
-
+//# sourceMappingURL=urlRouter.js.map
 });
 
 unwrapExports(urlRouter);
@@ -40724,7 +40724,7 @@ var ViewService = /** @class */ (function () {
     return ViewService;
 }());
 exports.ViewService = ViewService;
-
+//# sourceMappingURL=view.js.map
 });
 
 unwrapExports(view);
@@ -40767,7 +40767,7 @@ var UIRouterGlobals = /** @class */ (function () {
     return UIRouterGlobals;
 }());
 exports.UIRouterGlobals = UIRouterGlobals;
-
+//# sourceMappingURL=globals.js.map
 });
 
 unwrapExports(globals);
@@ -40848,7 +40848,7 @@ var UrlService = /** @class */ (function () {
     return UrlService;
 }());
 exports.UrlService = UrlService;
-
+//# sourceMappingURL=urlService.js.map
 });
 
 unwrapExports(urlService);
@@ -41037,7 +41037,7 @@ var UIRouter = /** @class */ (function () {
     return UIRouter;
 }());
 exports.UIRouter = UIRouter;
-
+//# sourceMappingURL=router.js.map
 });
 
 unwrapExports(router);
@@ -41078,7 +41078,7 @@ exports.treeChangesCleanup = function (trans) {
         node.resolvables = node.resolvables.map(replaceTransitionWithNull);
     });
 };
-
+//# sourceMappingURL=coreResolvables.js.map
 });
 
 unwrapExports(coreResolvables);
@@ -41120,7 +41120,7 @@ var redirectToHook = function (trans) {
 exports.registerRedirectToHook = function (transitionService) {
     return transitionService.onStart({ to: function (state) { return !!state.redirectTo; } }, redirectToHook);
 };
-
+//# sourceMappingURL=redirectTo.js.map
 });
 
 unwrapExports(redirectTo);
@@ -41182,7 +41182,7 @@ var onEnterHook = makeEnterExitRetainHook('onEnter');
 exports.registerOnEnterHook = function (transitionService) {
     return transitionService.onEnter({ entering: function (state) { return !!state.onEnter; } }, onEnterHook);
 };
-
+//# sourceMappingURL=onEnterExitRetain.js.map
 });
 
 unwrapExports(onEnterExitRetain);
@@ -41249,7 +41249,7 @@ var resolveRemaining = function (trans) {
 exports.registerResolveRemaining = function (transitionService) {
     return transitionService.onFinish({}, resolveRemaining, { priority: exports.RESOLVE_HOOK_PRIORITY });
 };
-
+//# sourceMappingURL=resolve.js.map
 });
 
 unwrapExports(resolve$1);
@@ -41301,7 +41301,7 @@ var activateViews = function (transition) {
 exports.registerActivateViews = function (transitionService) {
     return transitionService.onSuccess({}, activateViews);
 };
-
+//# sourceMappingURL=views.js.map
 });
 
 unwrapExports(views);
@@ -41341,7 +41341,7 @@ var updateGlobalState = function (trans) {
 exports.registerUpdateGlobalState = function (transitionService) {
     return transitionService.onCreate({}, updateGlobalState);
 };
-
+//# sourceMappingURL=updateGlobals.js.map
 });
 
 unwrapExports(updateGlobals);
@@ -41371,7 +41371,7 @@ var updateUrl = function (transition) {
 exports.registerUpdateUrl = function (transitionService) {
     return transitionService.onSuccess({}, updateUrl, { priority: 9999 });
 };
-
+//# sourceMappingURL=url.js.map
 });
 
 unwrapExports(url);
@@ -41473,7 +41473,7 @@ function lazyLoadState(transition, state) {
     return promise;
 }
 exports.lazyLoadState = lazyLoadState;
-
+//# sourceMappingURL=lazyLoad.js.map
 });
 
 unwrapExports(lazyLoad);
@@ -41507,7 +41507,7 @@ var TransitionEventType = /** @class */ (function () {
     return TransitionEventType;
 }());
 exports.TransitionEventType = TransitionEventType;
-
+//# sourceMappingURL=transitionEventType.js.map
 });
 
 unwrapExports(transitionEventType);
@@ -41543,7 +41543,7 @@ function ignoredHook(trans) {
 exports.registerIgnoredTransitionHook = function (transitionService) {
     return transitionService.onBefore({}, ignoredHook, { priority: -9999 });
 };
-
+//# sourceMappingURL=ignoredTransition.js.map
 });
 
 unwrapExports(ignoredTransition);
@@ -41567,7 +41567,7 @@ function invalidTransitionHook(trans) {
 exports.registerInvalidTransitionHook = function (transitionService) {
     return transitionService.onBefore({}, invalidTransitionHook, { priority: -10000 });
 };
-
+//# sourceMappingURL=invalidTransition.js.map
 });
 
 unwrapExports(invalidTransition);
@@ -41812,7 +41812,7 @@ var TransitionService = /** @class */ (function () {
     return TransitionService;
 }());
 exports.TransitionService = TransitionService;
-
+//# sourceMappingURL=transitionService.js.map
 });
 
 unwrapExports(transitionService);
@@ -42382,7 +42382,7 @@ var StateService = /** @class */ (function () {
     return StateService;
 }());
 exports.StateService = StateService;
-
+//# sourceMappingURL=stateService.js.map
 });
 
 unwrapExports(stateService);
@@ -42400,7 +42400,7 @@ __export(stateQueueManager);
 __export(stateRegistry);
 __export(stateService);
 __export(targetState);
-
+//# sourceMappingURL=index.js.map
 });
 
 unwrapExports(state);
@@ -42433,7 +42433,7 @@ __export(transition);
 __export(transitionHook);
 __export(transitionEventType);
 __export(transitionService);
-
+//# sourceMappingURL=index.js.map
 });
 
 unwrapExports(transition$2);
@@ -42449,7 +42449,7 @@ __export(urlMatcherFactory);
 __export(urlRouter);
 __export(urlRule);
 __export(urlService);
-
+//# sourceMappingURL=index.js.map
 });
 
 unwrapExports(url$2);
@@ -42461,7 +42461,7 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(view);
-
+//# sourceMappingURL=index.js.map
 });
 
 unwrapExports(view$2);
@@ -42521,7 +42521,7 @@ exports.$q = {
         }
     },
 };
-
+//# sourceMappingURL=q.js.map
 });
 
 unwrapExports(q);
@@ -42626,7 +42626,7 @@ exports.$injector = {
         return result || [];
     },
 };
-
+//# sourceMappingURL=injector.js.map
 });
 
 unwrapExports(injector);
@@ -42686,7 +42686,7 @@ function locationPluginFactory(name, isHtml5, serviceClass, configurationClass) 
     };
 }
 exports.locationPluginFactory = locationPluginFactory;
-
+//# sourceMappingURL=utils.js.map
 });
 
 unwrapExports(utils);
@@ -42734,7 +42734,7 @@ var BaseLocationServices = /** @class */ (function () {
     return BaseLocationServices;
 }());
 exports.BaseLocationServices = BaseLocationServices;
-
+//# sourceMappingURL=baseLocationService.js.map
 });
 
 unwrapExports(baseLocationService);
@@ -42780,7 +42780,7 @@ var HashLocationService = /** @class */ (function (_super) {
     return HashLocationService;
 }(baseLocationService.BaseLocationServices));
 exports.HashLocationService = HashLocationService;
-
+//# sourceMappingURL=hashLocationService.js.map
 });
 
 unwrapExports(hashLocationService);
@@ -42819,7 +42819,7 @@ var MemoryLocationService = /** @class */ (function (_super) {
     return MemoryLocationService;
 }(baseLocationService.BaseLocationServices));
 exports.MemoryLocationService = MemoryLocationService;
-
+//# sourceMappingURL=memoryLocationService.js.map
 });
 
 unwrapExports(memoryLocationService);
@@ -42899,7 +42899,7 @@ var PushStateLocationService = /** @class */ (function (_super) {
     return PushStateLocationService;
 }(baseLocationService.BaseLocationServices));
 exports.PushStateLocationService = PushStateLocationService;
-
+//# sourceMappingURL=pushStateLocationService.js.map
 });
 
 unwrapExports(pushStateLocationService);
@@ -42929,7 +42929,7 @@ var MemoryLocationConfig = /** @class */ (function () {
     return MemoryLocationConfig;
 }());
 exports.MemoryLocationConfig = MemoryLocationConfig;
-
+//# sourceMappingURL=memoryLocationConfig.js.map
 });
 
 unwrapExports(memoryLocationConfig);
@@ -42981,7 +42981,7 @@ var BrowserLocationConfig = /** @class */ (function () {
     return BrowserLocationConfig;
 }());
 exports.BrowserLocationConfig = BrowserLocationConfig;
-
+//# sourceMappingURL=browserLocationConfig.js.map
 });
 
 unwrapExports(browserLocationConfig);
@@ -43015,7 +43015,7 @@ exports.hashLocationPlugin = utils.locationPluginFactory('vanilla.hashBangLocati
 exports.pushStateLocationPlugin = utils.locationPluginFactory('vanilla.pushStateLocation', true, pushStateLocationService.PushStateLocationService, browserLocationConfig.BrowserLocationConfig);
 /** A `UIRouterPlugin` that gets/sets the current location from an in-memory object */
 exports.memoryLocationPlugin = utils.locationPluginFactory('vanilla.memoryLocation', false, memoryLocationService.MemoryLocationService, memoryLocationConfig.MemoryLocationConfig);
-
+//# sourceMappingURL=plugins.js.map
 });
 
 unwrapExports(plugins);
@@ -43036,7 +43036,7 @@ __export(memoryLocationConfig);
 __export(browserLocationConfig);
 __export(utils);
 __export(plugins);
-
+//# sourceMappingURL=index.js.map
 });
 
 unwrapExports(vanilla$2);
@@ -43053,7 +43053,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */
 /** */
 __export(vanilla$2);
-
+//# sourceMappingURL=vanilla.js.map
 });
 
 unwrapExports(vanilla);
@@ -43079,7 +43079,7 @@ var UIRouterPluginBase = /** @class */ (function () {
     return UIRouterPluginBase;
 }());
 exports.UIRouterPluginBase = UIRouterPluginBase;
-
+//# sourceMappingURL=interface.js.map
 });
 
 unwrapExports(_interface$4);
@@ -43106,7 +43106,7 @@ __export(globals);
 __export(router);
 __export(vanilla);
 __export(_interface$4);
-
+//# sourceMappingURL=index.js.map
 });
 
 unwrapExports(lib);
@@ -45108,7 +45108,7 @@ exports.UrlRouterProvider = UrlRouterProvider;
 Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
-
+//# sourceMappingURL=ui-router-angularjs.js.map
 });
 
 unwrapExports(uiRouterAngularjs);
@@ -89879,9 +89879,602 @@ ngFileUpload$1.service('UploadExif', ['UploadResize', '$q', function (UploadResi
   return upload;
 }]);
 
+/**
+ * An Angular module that gives you access to the browsers local storage
+ * @version v0.7.1 - 2017-06-21
+ * @link https://github.com/grevory/angular-local-storage
+ * @author grevory <greg@gregpike.ca>
+ * @license MIT License, http://www.opensource.org/licenses/MIT
+ */
+(function (window, angular) {
+var isDefined = angular.isDefined,
+  isUndefined = angular.isUndefined,
+  isNumber = angular.isNumber,
+  isObject = angular.isObject,
+  isArray = angular.isArray,
+  isString = angular.isString,
+  extend = angular.extend,
+  toJson = angular.toJson;
+
+angular
+  .module('LocalStorageModule', [])
+  .provider('localStorageService', function() {
+    // You should set a prefix to avoid overwriting any local storage variables from the rest of your app
+    // e.g. localStorageServiceProvider.setPrefix('yourAppName');
+    // With provider you can use config as this:
+    // myApp.config(function (localStorageServiceProvider) {
+    //    localStorageServiceProvider.prefix = 'yourAppName';
+    // });
+    this.prefix = 'ls';
+
+    // You could change web storage type localstorage or sessionStorage
+    this.storageType = 'localStorage';
+
+    // Cookie options (usually in case of fallback)
+    // expiry = Number of days before cookies expire // 0 = Does not expire
+    // path = The web path the cookie represents
+    // secure = Wether the cookies should be secure (i.e only sent on HTTPS requests)
+    this.cookie = {
+      expiry: 30,
+      path: '/',
+      secure: false
+    };
+
+    // Decides wether we should default to cookies if localstorage is not supported.
+    this.defaultToCookie = true;
+
+    // Send signals for each of the following actions?
+    this.notify = {
+      setItem: true,
+      removeItem: false
+    };
+
+    // Setter for the prefix
+    this.setPrefix = function(prefix) {
+      this.prefix = prefix;
+      return this;
+    };
+
+    // Setter for the storageType
+    this.setStorageType = function(storageType) {
+      this.storageType = storageType;
+      return this;
+    };
+    // Setter for defaultToCookie value, default is true.
+    this.setDefaultToCookie = function (shouldDefault) {
+      this.defaultToCookie = !!shouldDefault; // Double-not to make sure it's a bool value.
+      return this;
+    };
+    // Setter for cookie config
+    this.setStorageCookie = function(exp, path, secure) {
+      this.cookie.expiry = exp;
+      this.cookie.path = path;
+      this.cookie.secure = secure;
+      return this;
+    };
+
+    // Setter for cookie domain
+    this.setStorageCookieDomain = function(domain) {
+      this.cookie.domain = domain;
+      return this;
+    };
+
+    // Setter for notification config
+    // itemSet & itemRemove should be booleans
+    this.setNotify = function(itemSet, itemRemove) {
+      this.notify = {
+        setItem: itemSet,
+        removeItem: itemRemove
+      };
+      return this;
+    };
+
+    this.$get = ['$rootScope', '$window', '$document', '$parse','$timeout', function($rootScope, $window, $document, $parse, $timeout) {
+      var self = this;
+      var prefix = self.prefix;
+      var cookie = self.cookie;
+      var notify = self.notify;
+      var storageType = self.storageType;
+      var webStorage;
+
+      // When Angular's $document is not available
+      if (!$document) {
+        $document = document;
+      } else if ($document[0]) {
+        $document = $document[0];
+      }
+
+      // If there is a prefix set in the config lets use that with an appended period for readability
+      if (prefix.substr(-1) !== '.') {
+        prefix = !!prefix ? prefix + '.' : '';
+      }
+      var deriveQualifiedKey = function(key) {
+        return prefix + key;
+      };
+
+      // Removes prefix from the key.
+      var underiveQualifiedKey = function (key) {
+        return key.replace(new RegExp('^' + prefix, 'g'), '');
+      };
+
+      // Check if the key is within our prefix namespace.
+      var isKeyPrefixOurs = function (key) {
+        return key.indexOf(prefix) === 0;
+      };
+
+      // Checks the browser to see if local storage is supported
+      var checkSupport = function () {
+        try {
+          var supported = (storageType in $window && $window[storageType] !== null);
+
+          // When Safari (OS X or iOS) is in private browsing mode, it appears as though localStorage
+          // is available, but trying to call .setItem throws an exception.
+          //
+          // "QUOTA_EXCEEDED_ERR: DOM Exception 22: An attempt was made to add something to storage
+          // that exceeded the quota."
+          var key = deriveQualifiedKey('__' + Math.round(Math.random() * 1e7));
+          if (supported) {
+            webStorage = $window[storageType];
+            webStorage.setItem(key, '');
+            webStorage.removeItem(key);
+          }
+
+          return supported;
+        } catch (e) {
+          // Only change storageType to cookies if defaulting is enabled.
+          if (self.defaultToCookie)
+            storageType = 'cookie';
+          $rootScope.$broadcast('LocalStorageModule.notification.error', e.message);
+          return false;
+        }
+      };
+      var browserSupportsLocalStorage = checkSupport();
+
+      // Directly adds a value to local storage
+      // If local storage is not available in the browser use cookies
+      // Example use: localStorageService.add('library','angular');
+      var addToLocalStorage = function (key, value, type) {
+        var previousType = getStorageType();
+
+        try {
+          setStorageType(type);
+
+          // Let's convert undefined values to null to get the value consistent
+          if (isUndefined(value)) {
+            value = null;
+          } else {
+            value = toJson(value);
+          }
+
+          // If this browser does not support local storage use cookies
+          if (!browserSupportsLocalStorage && self.defaultToCookie || self.storageType === 'cookie') {
+            if (!browserSupportsLocalStorage) {
+              $rootScope.$broadcast('LocalStorageModule.notification.warning', 'LOCAL_STORAGE_NOT_SUPPORTED');
+            }
+
+            if (notify.setItem) {
+              $rootScope.$broadcast('LocalStorageModule.notification.setitem', {key: key, newvalue: value, storageType: 'cookie'});
+            }
+            return addToCookies(key, value);
+          }
+
+          try {
+            if (webStorage) {
+              webStorage.setItem(deriveQualifiedKey(key), value);
+            }
+            if (notify.setItem) {
+              $rootScope.$broadcast('LocalStorageModule.notification.setitem', {key: key, newvalue: value, storageType: self.storageType});
+            }
+          } catch (e) {
+            $rootScope.$broadcast('LocalStorageModule.notification.error', e.message);
+            return addToCookies(key, value);
+          }
+          return true;
+        } finally {
+          setStorageType(previousType);
+        }
+      };
+
+      // Directly get a value from local storage
+      // Example use: localStorageService.get('library'); // returns 'angular'
+      var getFromLocalStorage = function (key, type) {
+        var previousType = getStorageType();
+
+        try {
+          setStorageType(type);
+
+          if (!browserSupportsLocalStorage && self.defaultToCookie  || self.storageType === 'cookie') {
+            if (!browserSupportsLocalStorage) {
+              $rootScope.$broadcast('LocalStorageModule.notification.warning', 'LOCAL_STORAGE_NOT_SUPPORTED');
+            }
+
+            return getFromCookies(key);
+          }
+
+          var item = webStorage ? webStorage.getItem(deriveQualifiedKey(key)) : null;
+          // angular.toJson will convert null to 'null', so a proper conversion is needed
+          // FIXME not a perfect solution, since a valid 'null' string can't be stored
+          if (!item || item === 'null') {
+            return null;
+          }
+
+          try {
+            return JSON.parse(item);
+          } catch (e) {
+            return item;
+          }
+        } finally {
+          setStorageType(previousType);
+        }
+      };
+
+      // Remove an item from local storage
+      // Example use: localStorageService.remove('library'); // removes the key/value pair of library='angular'
+      //
+      // This is var-arg removal, check the last argument to see if it is a storageType
+      // and set type accordingly before removing.
+      //
+      var removeFromLocalStorage = function () {
+        var previousType = getStorageType();
+
+        try {
+          // can't pop on arguments, so we do this
+          var consumed = 0;
+          if (arguments.length >= 1 &&
+              (arguments[arguments.length - 1] === 'localStorage' ||
+               arguments[arguments.length - 1] === 'sessionStorage')) {
+            consumed = 1;
+            setStorageType(arguments[arguments.length - 1]);
+          }
+
+          var i, key;
+          for (i = 0; i < arguments.length - consumed; i++) {
+            key = arguments[i];
+            if (!browserSupportsLocalStorage && self.defaultToCookie || self.storageType === 'cookie') {
+              if (!browserSupportsLocalStorage) {
+                $rootScope.$broadcast('LocalStorageModule.notification.warning', 'LOCAL_STORAGE_NOT_SUPPORTED');
+              }
+
+              if (notify.removeItem) {
+                $rootScope.$broadcast('LocalStorageModule.notification.removeitem', {key: key, storageType: 'cookie'});
+              }
+              removeFromCookies(key);
+            }
+            else {
+              try {
+                webStorage.removeItem(deriveQualifiedKey(key));
+                if (notify.removeItem) {
+                  $rootScope.$broadcast('LocalStorageModule.notification.removeitem', {
+                    key: key,
+                    storageType: self.storageType
+                  });
+                }
+              } catch (e) {
+                $rootScope.$broadcast('LocalStorageModule.notification.error', e.message);
+                removeFromCookies(key);
+              }
+            }
+          }
+        } finally {
+          setStorageType(previousType);
+        }
+      };
+
+      // Return array of keys for local storage
+      // Example use: var keys = localStorageService.keys()
+      var getKeysForLocalStorage = function (type) {
+        var previousType = getStorageType();
+
+        try {
+          setStorageType(type);
+
+          if (!browserSupportsLocalStorage) {
+            $rootScope.$broadcast('LocalStorageModule.notification.warning', 'LOCAL_STORAGE_NOT_SUPPORTED');
+            return [];
+          }
+
+          var prefixLength = prefix.length;
+          var keys = [];
+          for (var key in webStorage) {
+            // Only return keys that are for this app
+            if (key.substr(0, prefixLength) === prefix) {
+              try {
+                keys.push(key.substr(prefixLength));
+              } catch (e) {
+                $rootScope.$broadcast('LocalStorageModule.notification.error', e.Description);
+                return [];
+              }
+            }
+          }
+
+          return keys;
+        } finally {
+          setStorageType(previousType);
+        }
+      };
+
+      // Remove all data for this app from local storage
+      // Also optionally takes a regular expression string and removes the matching key-value pairs
+      // Example use: localStorageService.clearAll();
+      // Should be used mostly for development purposes
+      var clearAllFromLocalStorage = function (regularExpression, type) {
+        var previousType = getStorageType();
+
+        try {
+          setStorageType(type);
+
+          // Setting both regular expressions independently
+          // Empty strings result in catchall RegExp
+          var prefixRegex = !!prefix ? new RegExp('^' + prefix) : new RegExp();
+          var testRegex = !!regularExpression ? new RegExp(regularExpression) : new RegExp();
+
+          if (!browserSupportsLocalStorage && self.defaultToCookie  || self.storageType === 'cookie') {
+            if (!browserSupportsLocalStorage) {
+              $rootScope.$broadcast('LocalStorageModule.notification.warning', 'LOCAL_STORAGE_NOT_SUPPORTED');
+            }
+            return clearAllFromCookies();
+          }
+          if (!browserSupportsLocalStorage && !self.defaultToCookie)
+            return false;
+          var prefixLength = prefix.length;
+
+          for (var key in webStorage) {
+            // Only remove items that are for this app and match the regular expression
+            if (prefixRegex.test(key) && testRegex.test(key.substr(prefixLength))) {
+              try {
+                removeFromLocalStorage(key.substr(prefixLength));
+              } catch (e) {
+                $rootScope.$broadcast('LocalStorageModule.notification.error', e.message);
+                return clearAllFromCookies();
+              }
+            }
+          }
+
+          return true;
+        } finally {
+          setStorageType(previousType);
+        }
+      };
+
+      // Checks the browser to see if cookies are supported
+      var browserSupportsCookies = (function() {
+        try {
+          return $window.navigator.cookieEnabled ||
+          ("cookie" in $document && ($document.cookie.length > 0 ||
+            ($document.cookie = "test").indexOf.call($document.cookie, "test") > -1));
+          } catch (e) {
+            $rootScope.$broadcast('LocalStorageModule.notification.error', e.message);
+            return false;
+          }
+        }());
+
+        // Directly adds a value to cookies
+        // Typically used as a fallback if local storage is not available in the browser
+        // Example use: localStorageService.cookie.add('library','angular');
+        var addToCookies = function (key, value, daysToExpiry, secure) {
+
+          if (isUndefined(value)) {
+            return false;
+          } else if(isArray(value) || isObject(value)) {
+            value = toJson(value);
+          }
+
+          if (!browserSupportsCookies) {
+            $rootScope.$broadcast('LocalStorageModule.notification.error', 'COOKIES_NOT_SUPPORTED');
+            return false;
+          }
+
+          try {
+            var expiry = '',
+            expiryDate = new Date(),
+            cookieDomain = '';
+
+            if (value === null) {
+              // Mark that the cookie has expired one day ago
+              expiryDate.setTime(expiryDate.getTime() + (-1 * 24 * 60 * 60 * 1000));
+              expiry = "; expires=" + expiryDate.toGMTString();
+              value = '';
+            } else if (isNumber(daysToExpiry) && daysToExpiry !== 0) {
+              expiryDate.setTime(expiryDate.getTime() + (daysToExpiry * 24 * 60 * 60 * 1000));
+              expiry = "; expires=" + expiryDate.toGMTString();
+            } else if (cookie.expiry !== 0) {
+              expiryDate.setTime(expiryDate.getTime() + (cookie.expiry * 24 * 60 * 60 * 1000));
+              expiry = "; expires=" + expiryDate.toGMTString();
+            }
+            if (!!key) {
+              var cookiePath = "; path=" + cookie.path;
+              if (cookie.domain) {
+                cookieDomain = "; domain=" + cookie.domain;
+              }
+              /* Providing the secure parameter always takes precedence over config
+               * (allows developer to mix and match secure + non-secure) */
+              if (typeof secure === 'boolean') {
+                  if (secure === true) {
+                      /* We've explicitly specified secure,
+                       * add the secure attribute to the cookie (after domain) */
+                      cookieDomain += "; secure";
+                  }
+                  // else - secure has been supplied but isn't true - so don't set secure flag, regardless of what config says
+              }
+              else if (cookie.secure === true) {
+                  // secure parameter wasn't specified, get default from config
+                  cookieDomain += "; secure";
+              }
+              $document.cookie = deriveQualifiedKey(key) + "=" + encodeURIComponent(value) + expiry + cookiePath + cookieDomain;
+            }
+          } catch (e) {
+            $rootScope.$broadcast('LocalStorageModule.notification.error', e.message);
+            return false;
+          }
+          return true;
+        };
+
+        // Directly get a value from a cookie
+        // Example use: localStorageService.cookie.get('library'); // returns 'angular'
+        var getFromCookies = function (key) {
+          if (!browserSupportsCookies) {
+            $rootScope.$broadcast('LocalStorageModule.notification.error', 'COOKIES_NOT_SUPPORTED');
+            return false;
+          }
+
+          var cookies = $document.cookie && $document.cookie.split(';') || [];
+          for(var i=0; i < cookies.length; i++) {
+            var thisCookie = cookies[i];
+            while (thisCookie.charAt(0) === ' ') {
+              thisCookie = thisCookie.substring(1,thisCookie.length);
+            }
+            if (thisCookie.indexOf(deriveQualifiedKey(key) + '=') === 0) {
+              var storedValues = decodeURIComponent(thisCookie.substring(prefix.length + key.length + 1, thisCookie.length));
+              try {
+                var parsedValue = JSON.parse(storedValues);
+                return typeof(parsedValue) === 'number' ? storedValues : parsedValue;
+              } catch(e) {
+                return storedValues;
+              }
+            }
+          }
+          return null;
+        };
+
+        var removeFromCookies = function (key) {
+          addToCookies(key,null);
+        };
+
+        var clearAllFromCookies = function () {
+          var thisCookie = null;
+          var prefixLength = prefix.length;
+          var cookies = $document.cookie.split(';');
+          for(var i = 0; i < cookies.length; i++) {
+            thisCookie = cookies[i];
+
+            while (thisCookie.charAt(0) === ' ') {
+              thisCookie = thisCookie.substring(1, thisCookie.length);
+            }
+
+            var key = thisCookie.substring(prefixLength, thisCookie.indexOf('='));
+            removeFromCookies(key);
+          }
+        };
+
+        var getStorageType = function() {
+          return storageType;
+        };
+
+        var setStorageType = function(type) {
+          if (type && storageType !== type) {
+            storageType = type;
+            browserSupportsLocalStorage = checkSupport();
+          }
+          return browserSupportsLocalStorage;
+        };
+
+        // Add a listener on scope variable to save its changes to local storage
+        // Return a function which when called cancels binding
+        var bindToScope = function(scope, key, def, lsKey, type) {
+          lsKey = lsKey || key;
+          var value = getFromLocalStorage(lsKey, type);
+
+          if (value === null && isDefined(def)) {
+            value = def;
+          } else if (isObject(value) && isObject(def)) {
+            value = extend(value, def);
+          }
+
+          $parse(key).assign(scope, value);
+
+          return scope.$watch(key, function(newVal) {
+            addToLocalStorage(lsKey, newVal, type);
+          }, isObject(scope[key]));
+        };
+
+        // Add listener to local storage, for update callbacks.
+        if (browserSupportsLocalStorage) {
+            if ($window.addEventListener) {
+                $window.addEventListener("storage", handleStorageChangeCallback, false);
+                $rootScope.$on('$destroy', function() {
+                    $window.removeEventListener("storage", handleStorageChangeCallback);
+                });
+            } else if($window.attachEvent){
+                // attachEvent and detachEvent are proprietary to IE v6-10
+                $window.attachEvent("onstorage", handleStorageChangeCallback);
+                $rootScope.$on('$destroy', function() {
+                    $window.detachEvent("onstorage", handleStorageChangeCallback);
+                });
+            }
+        }
+
+        // Callback handler for storage changed.
+        function handleStorageChangeCallback(e) {
+            if (!e) { e = $window.event; }
+            if (notify.setItem) {
+                if (isString(e.key) && isKeyPrefixOurs(e.key)) {
+                    var key = underiveQualifiedKey(e.key);
+                    // Use timeout, to avoid using $rootScope.$apply.
+                    $timeout(function () {
+                        $rootScope.$broadcast('LocalStorageModule.notification.changed', { key: key, newvalue: e.newValue, storageType: self.storageType });
+                    });
+                }
+            }
+        }
+
+        // Return localStorageService.length
+        // ignore keys that not owned
+        var lengthOfLocalStorage = function(type) {
+          var previousType = getStorageType();
+
+          try {
+            setStorageType(type);
+
+            var count = 0;
+            var storage = $window[storageType];
+            for(var i = 0; i < storage.length; i++) {
+              if(storage.key(i).indexOf(prefix) === 0 ) {
+                count++;
+              }
+            }
+            
+            return count;
+          } finally {
+            setStorageType(previousType);
+          }
+        };
+
+        var changePrefix = function(localStoragePrefix) {
+          prefix = localStoragePrefix;
+        };
+
+        return {
+          isSupported: browserSupportsLocalStorage,
+          getStorageType: getStorageType,
+          setStorageType: setStorageType,
+          setPrefix: changePrefix,
+          set: addToLocalStorage,
+          add: addToLocalStorage, //DEPRECATED
+          get: getFromLocalStorage,
+          keys: getKeysForLocalStorage,
+          remove: removeFromLocalStorage,
+          clearAll: clearAllFromLocalStorage,
+          bind: bindToScope,
+          deriveKey: deriveQualifiedKey,
+          underiveKey: underiveQualifiedKey,
+          length: lengthOfLocalStorage,
+          defaultToCookie: this.defaultToCookie,
+          cookie: {
+            isSupported: browserSupportsCookies,
+            set: addToCookies,
+            add: addToCookies, //DEPRECATED
+            get: getFromCookies,
+            remove: removeFromCookies,
+            clearAll: clearAllFromCookies
+          }
+        };
+      }];
+  });
+})(window, window.angular);
+
 const angular$1 = angular_1;
 
-const App = angular$1.module('pizza-shop', ['ui.router', 'ngMaterial', 'ngMessages', 'ngFileUpload']);
+const App = angular$1.module('pizza-shop', ['ui.router', 'ngMaterial', 'ngMessages', 'ngFileUpload', 'LocalStorageModule']);
 
 config.$inject = ["$urlRouterProvider"];
 function config(urlRouterProvider) {
@@ -90210,7 +90803,7 @@ class AddUserCtrl {
 AddUserCtrl.$inject = ['$state', 'userService'];
 App.controller('addUserCtrl', AddUserCtrl);
 
-var html$7 = "<md-content class=\"md-padding\" layout=\"column\" layout-wrap layout-padding>\r\n    <form name=\"userForm\" ng-submit=\"$ctrl.saveUser()\">\r\n        <div layout=\"column\">\r\n            <md-input-container class=\"md-block\">\r\n                <label>Nombre</label>\r\n                <input required type=\"string\" name=\"nombre\" ng-model=\"$ctrl.user.nombre\" pattern=\"^[a-zA-Z]{1,15}\" />\r\n                <div ng-messages=\"userForm.nombre.$error\" md-auto-hide=\"false\">\r\n                    <div ng-message=\"pattern\">\r\n                        Solo admite letras\r\n                    </div>\r\n                </div>\r\n            </md-input-container>\r\n\r\n            <md-input-container class=\"md-block\">\r\n                <label>Apellido</label>\r\n                <input required type=\"string\" name=\"apellidos\" ng-model=\"$ctrl.user.apellidos\" pattern=\"^[a-zA-Z]{1,15}\" />\r\n                <div ng-messages=\"userForm.apellidos.$error\" md-auto-hide=\"false\">\r\n                    <div ng-message=\"pattern\">\r\n                        Solo admite letras\r\n                    </div>\r\n                </div>\r\n            </md-input-container>\r\n\r\n            <md-input-container class=\"md-block\">\r\n                <label>Usuario(email)</label>\r\n                <input required type=\"email\" name=\"email\" ng-model=\"$ctrl.user.email\" pattern=\"[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$\" />\r\n                <div ng-messages=\"userForm.email.$error\" md-auto-hide=\"false\">\r\n                    <div ng-message=\"pattern\">\r\n                        Introduce correo estilo xyz@dominio.nombredominio\r\n                    </div>\r\n                </div>\r\n            </md-input-container>\r\n\r\n            <md-input-container class=\"md-block\">\r\n                <label>Contraseña</label>\r\n                <input required id=\"password\" type=\"password\" name=\"password\" ng-model=\"$ctrl.user.password\" pattern=\"(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{6,}\"\r\n                    onchange=\"if(this.checkValidity()) form.password_two.pattern = this.value;\" />\r\n                <div ng-messages=\"userForm.password.$error\" md-auto-hide=\"false\">\r\n                    <div ng-message=\"pattern\">\r\n                        Tiene que tener al menos 6, una minúscula, una mayúscula\r\n                    </div>\r\n                </div>\r\n            </md-input-container>\r\n\r\n            <md-input-container class=\"md-block\">\r\n                <label>Repetir contraseña</label>\r\n                <input required id=\"password_two\" type=\"password\" name=\"confirmPassword\" ng-model=\"$ctrl.user.confirmPassword\" onchange=\"this.setCustomValidity(this.validity.patternMismatch ? 'Las contraseñas no coinciden' : '');\"/>\r\n            </md-input-container>\r\n\r\n\r\n            <md-input-container class=\"md-block\">\r\n                <label>Aceptar terminos y condiciones</label>\r\n                <input required checked type=\"checkbox\" name=\"accept\" ng-model=\"$ctrl.user.accept\" />\r\n            </md-input-container>\r\n\r\n            <md-button class=\"md-primary\" type=\"submit\">Registrar</md-button>\r\n\r\n    </form>\r\n</md-content>";
+var html$7 = "<md-content class=\"md-padding\" layout=\"column\" layout-wrap layout-padding>\r\n    <form name=\"userForm\" ng-submit=\"$ctrl.saveUser()\">\r\n        <div layout=\"column\">\r\n            <md-input-container class=\"md-block\">\r\n                <label>Nombre</label>\r\n                <input required type=\"string\" name=\"nombre\" ng-model=\"$ctrl.user.nombre\" pattern=\"^[a-zA-Z]{1,15}\" />\r\n                <div ng-messages=\"userForm.nombre.$error\" md-auto-hide=\"false\">\r\n                    <div ng-message=\"pattern\">\r\n                        Solo admite letras\r\n                    </div>\r\n                </div>\r\n            </md-input-container>\r\n\r\n            <md-input-container class=\"md-block\">\r\n                <label>Apellido</label>\r\n                <input required type=\"string\" name=\"apellidos\" ng-model=\"$ctrl.user.apellidos\" pattern=\"^[a-zA-Z]{1,15}\" />\r\n                <div ng-messages=\"userForm.apellidos.$error\" md-auto-hide=\"false\">\r\n                    <div ng-message=\"pattern\">\r\n                        Solo admite letras\r\n                    </div>\r\n                </div>\r\n            </md-input-container>\r\n\r\n            <md-input-container class=\"md-block\">\r\n                <label>Usuario(email)</label>\r\n                <input required type=\"email\" name=\"email\" ng-model=\"$ctrl.user.email\" pattern=\"[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$\" />\r\n                <div ng-messages=\"userForm.email.$error\" md-auto-hide=\"false\">\r\n                    <div ng-message=\"pattern\">\r\n                        Introduce correo estilo xyz@dominio.nombredominio\r\n                    </div>\r\n                </div>\r\n            </md-input-container>\r\n\r\n            <md-input-container class=\"md-block\">\r\n                <label>Contraseña</label>\r\n                <input required id=\"password\" type=\"text\" name=\"password\" ng-model=\"$ctrl.user.password\" pattern=\"(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{6,}\"\r\n                    onchange=\"if(this.checkValidity()) form.password_two.pattern = this.value;\" />\r\n                <div ng-messages=\"userForm.password.$error\" md-auto-hide=\"false\">\r\n                    <div ng-message=\"pattern\">\r\n                        Tiene que tener al menos 6, una minúscula, una mayúscula\r\n                    </div>\r\n                </div>\r\n            </md-input-container>\r\n\r\n            <md-input-container class=\"md-block\">\r\n                <label>Repetir contraseña</label>\r\n                <input required id=\"password_two\" type=\"text\" name=\"confirmPassword\" ng-model=\"$ctrl.user.confirmPassword\" onchange=\"this.setCustomValidity(this.validity.patternMismatch ? 'Las contraseñas no coinciden' : '');\"/>\r\n            </md-input-container>\r\n\r\n\r\n            <md-input-container class=\"md-block\">\r\n                <label>Aceptar terminos y condiciones</label>\r\n                <input required checked type=\"checkbox\" name=\"accept\" ng-model=\"$ctrl.user.accept\" />\r\n            </md-input-container>\r\n\r\n            <md-button class=\"md-primary\" type=\"submit\">Registrar</md-button>\r\n\r\n    </form>\r\n</md-content>";
 
 const ilAddUser = {
     controller: 'addUserCtrl',
@@ -90237,17 +90830,20 @@ class LoginUserCtrl {
             password: null,
             grant_type: "password"
         };
+        this.IsAuth = false;
     }
     loginUser() {
         let self = this;
-        this.userService.login(this.user).then(function () {});
+        this.userService.login(this.user).then(function (response) {
+            self.IsAuth = true;
+        }, function (response) {});
     }
 }
 
 LoginUserCtrl.$inject = ['$state', 'userService'];
 App.controller('loginUserCtrl', LoginUserCtrl);
 
-var html$8 = "<md-content class=\"md-padding\" layout=\"column\" layout-wrap layout-padding>\r\n    <form name=\"userForm\" ng-submit=\"$ctrl.loginUser()\">\r\n        <div layout=\"column\">\r\n   <md-input-container class=\"md-block\">\r\n                <label>Usuario(email)</label>\r\n                <input required type=\"email\" name=\"email\" ng-model=\"$ctrl.user.email\" />\r\n                <div ng-messages=\"userForm.email.$error\" md-auto-hide=\"false\">\r\n                    <div ng-message=\"email\">\r\n                        Introduce correo válido\r\n                    </div>\r\n                </div>\r\n            </md-input-container>\r\n            <md-input-container class=\"md-block\">\r\n                <label>Contraseña</label>\r\n                <input required type=\"password\" name=\"password\" ng-model=\"$ctrl.user.password\" minlength=\"6\" />\r\n                <div ng-messages=\"userForm.password.$error\" md-auto-hide=\"false\">\r\n                    <div ng-message=\"minlength\">\r\n                        Tiene que tener al menos 6 carácteres\r\n                    </div>\r\n                </div>\r\n            </md-input-container>\r\n        <md-input-container>\r\n                <input required type=\"hidden\" name=\"grant_type\" value=\"password\" ng-model=\"$ctrl.user.grant_type\" />\r\n        </md-input-container>\r\n\r\n            <md-button class=\"md-primary\" type=\"submit\">Login</md-button>\r\n\r\n    </form>\r\n</md-content>";
+var html$8 = "<md-content class=\"md-padding\" layout=\"column\" layout-wrap layout-padding>\r\n    <form name=\"userForm\" ng-submit=\"$ctrl.loginUser()\">\r\n        <div layout=\"column\">\r\n   <md-input-container class=\"md-block\">\r\n                <label>Usuario(email)</label>\r\n                <input required type=\"email\" name=\"email\" ng-model=\"$ctrl.user.email\" />\r\n                <div ng-messages=\"userForm.email.$error\" md-auto-hide=\"false\">\r\n                    <div ng-message=\"email\">\r\n                        Introduce correo válido\r\n                    </div>\r\n                </div>\r\n            </md-input-container>\r\n            <md-input-container class=\"md-block\">\r\n                <label>Contraseña</label>\r\n                <input required type=\"text\" name=\"password\" ng-model=\"$ctrl.user.password\" minlength=\"6\" />\r\n                <div ng-messages=\"userForm.password.$error\" md-auto-hide=\"false\">\r\n                    <div ng-message=\"minlength\">\r\n                        Tiene que tener al menos 6 carácteres\r\n                    </div>\r\n                </div>\r\n            </md-input-container>\r\n        <md-input-container>\r\n                <input required type=\"hidden\" name=\"grant_type\" value=\"password\" ng-model=\"$ctrl.user.grant_type\" />\r\n        </md-input-container>\r\n\r\n            <md-button class=\"md-primary\" type=\"submit\">Login</md-button>\r\n\r\n    </form>\r\n</md-content>";
 
 const ilLoginUser = {
     controller: 'loginUserCtrl',
@@ -90256,8 +90852,9 @@ const ilLoginUser = {
 App.component('ilLoginUser', ilLoginUser);
 
 class UserService extends BaseService {
-    constructor(http, resolveUrl) {
+    constructor(http, resolveUrl, localStorageService) {
         super(http, resolveUrl, 'api/Account/Register', 'Token');
+        this._localStorage = localStorageService;
     }
 
     get(id) {
@@ -90274,10 +90871,21 @@ class UserService extends BaseService {
 
     login(user) {
         var data = "grant_type=password&username=" + user.email + "&password=" + user.password;
-        return this.http.post(super.getRouteToken(), data, { headers: { 'Content-Type': "application/x-www-form-urlencoded" } });
+        var self = this;
+        return this.http.post(super.getRouteToken(), data, { headers: { 'Content-Type': "application/x-www-form-urlencoded" } }).then(function (response) {
+            self._localStorage.set('authorizationData', { token: response.access_token, mail: user.mail });
+            return response;
+        }, function error(response) {
+            return response;
+        });
+    }
+
+    logOut(user) {
+        this.localStorageService.remove('authorizationData');
+        this.isAuth = false;
     }
 }
-UserService.$inject = ['$http', 'resolveUrl'];
+UserService.$inject = ['$http', 'resolveUrl', 'localStorageService'];
 App.service('userService', UserService);
 
 class IngredientService extends BaseService {
@@ -90336,7 +90944,7 @@ function config$6(stateProvider) {
 }
 App.config(config$6);
 
-var html$10 = "<md-sidenav md-component-id=\"sidenav\" class=\"md-sidenav-left\" md-component-id=\"left\" style=\"position:fixed\" md-is-locked-open=\"$mdMedia('gt-sm')\"\r\n  md-whiteframe=\"4\">\r\n  <md-toolbar class=\"md-theme-indigo\">\r\n    <img src=\"img/pokepizza.png\" alt=\"Logo Pizzeria\" height=\"320\" width=\"320\">\r\n    <h1 class=\"md-toolbar-tools\">Pizzeria La Toscana</h1>\r\n  </md-toolbar>\r\n  <md-content layout=\"column\" layout-padding>\r\n    <md-button class=\"md-primary\" ui-sref=\"loginuser\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Login\r\n    </md-button>\r\n    <md-button class=\"md-primary\" ui-sref=\"adduser\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Registro\r\n    </md-button>\r\n    <md-button class=\"md-primary\" ui-sref=\"pizzalist\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Mostrar pizzas\r\n    </md-button>\r\n    <md-button class=\"md-primary\" ui-sref=\"addpizza\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Añadir pizza\r\n    </md-button>\r\n  </md-content>\r\n</md-sidenav>";
+var html$10 = "<md-sidenav md-component-id=\"sidenav\" class=\"md-sidenav-left\" md-component-id=\"left\" style=\"position:fixed\" md-is-locked-open=\"$mdMedia('gt-sm')\"\r\n  md-whiteframe=\"4\">\r\n  <md-toolbar class=\"md-theme-indigo\">\r\n    <img src=\"img/pokepizza.png\" alt=\"Logo Pizzeria\" height=\"320\" width=\"320\">\r\n    <h1 class=\"md-toolbar-tools\">Pizzeria La Toscana</h1>\r\n  </md-toolbar>\r\n  <md-content layout=\"column\" layout-padding>\r\n    <md-button class=\"md-primary\" ui-sref=\"loginuser\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Login\r\n    </md-button>\r\n    <md-button class=\"md-primary\" ui-sref=\"adduser\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Registro\r\n    </md-button>\r\n    <md-button class=\"md-primary\" ui-sref=\"pizzalist\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Mostrar pizzas\r\n    </md-button>\r\n    <md-button class=\"md-primary\" ui-sref=\"addpizza\" data-ng-hide=\"!isAuth\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Añadir pizza\r\n    </md-button>\r\n    <md-button class=\"md-primary\" ui-sref=\"logout\" data-ng-hide=\"!isAuth\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Logout\r\n    </md-button>\r\n  </md-content>\r\n</md-sidenav>";
 
 const ilMenu = {
   template: html$10,
