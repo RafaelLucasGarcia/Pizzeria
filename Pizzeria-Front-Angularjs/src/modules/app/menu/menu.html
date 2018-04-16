@@ -1,0 +1,21 @@
+<md-sidenav md-component-id="sidenav" class="md-sidenav-left" md-component-id="left" style="position:fixed" md-is-locked-open="$mdMedia('gt-sm')"
+  md-whiteframe="4">
+  <md-toolbar class="md-theme-indigo">
+    <img src="img/pokepizza.png" alt="Logo Pizzeria" height="320" width="320">
+    <h1 class="md-toolbar-tools">Pizzeria La Toscana</h1>
+  </md-toolbar>
+  <md-content layout="column" layout-padding>
+    <md-button class="md-primary" ui-sref="loginuser" ng-click="$ctrl.closeSidenav()">
+      Login
+    </md-button>
+    <md-button class="md-primary" ui-sref="adduser" ng-click="$ctrl.closeSidenav()">
+      Registro
+    </md-button>
+    <md-button class="md-primary" ui-sref="pizzalist" ng-click="$ctrl.closeSidenav()">
+      Mostrar pizzas
+    </md-button>
+    <md-button class="md-primary" ui-sref="addpizza" ng-click="$ctrl.closeSidenav()">
+      Añadir pizza
+    </md-button>
+  </md-content>
+</md-sidenav>

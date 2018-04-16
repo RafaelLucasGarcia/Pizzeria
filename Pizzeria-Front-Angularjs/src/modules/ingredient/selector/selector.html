@@ -1,0 +1,5 @@
+<md-select ng-model="$ctrl.pizza.ingredients" multiple>
+    <md-option ng-repeat="ingredient in $ctrl.ingredients" ng-value="{{ingredient}}">
+        {{ingredient.name}}
+    </md-option>
+</md-select>

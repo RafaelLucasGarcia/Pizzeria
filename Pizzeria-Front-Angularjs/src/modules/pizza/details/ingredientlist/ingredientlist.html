@@ -1,0 +1,10 @@
+    
+<md-list layout-padding >
+    <div class="md-title">Ingredients</div>
+    <md-list-item class="md-3-line" ng-repeat="ingredient in $ctrl.ingredients">
+        <div class="md-list-item-text">
+            <h3>{{ ingredient.name | capitalize }}:</h3>
+            <p>{{ ingredient.prize }}$</p>
+        </div>
+    </md-list-item>
+</md-list>

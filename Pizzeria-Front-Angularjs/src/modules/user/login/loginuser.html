@@ -1,0 +1,29 @@
+<md-content class="md-padding" layout="column" layout-wrap layout-padding>
+    <form name="userForm" ng-submit="$ctrl.loginUser()">
+        <div layout="column">
+   <md-input-container class="md-block">
+                <label>Usuario(email)</label>
+                <input required type="email" name="email" ng-model="$ctrl.user.email" />
+                <div ng-messages="userForm.email.$error" md-auto-hide="false">
+                    <div ng-message="email">
+                        Introduce correo válido
+                    </div>
+                </div>
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label>Contraseña</label>
+                <input required type="password" name="password" ng-model="$ctrl.user.password" minlength="6" />
+                <div ng-messages="userForm.password.$error" md-auto-hide="false">
+                    <div ng-message="minlength">
+                        Tiene que tener al menos 6 carácteres
+                    </div>
+                </div>
+            </md-input-container>
+        <md-input-container>
+                <input required type="hidden" name="grant_type" value="password" ng-model="$ctrl.user.grant_type" />
+        </md-input-container>
+
+            <md-button class="md-primary" type="submit">Login</md-button>
+
+    </form>
+</md-content>
