@@ -36,7 +36,7 @@
                 <input required id="password" type="password" name="password" ng-model="$ctrl.user.password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
                     onchange="if(this.checkValidity()) form.password_two.pattern = this.value;" />
                 <div ng-messages="userForm.password.$error" md-auto-hide="false">
-                    <div ng-message="password">
+                    <div ng-message="pattern">
                         Tiene que tener al menos 6, una minúscula, una mayúscula
                     </div>
                 </div>
