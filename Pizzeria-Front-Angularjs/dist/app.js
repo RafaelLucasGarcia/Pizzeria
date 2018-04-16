@@ -34628,7 +34628,7 @@ function pattern(struct) {
     };
 }
 exports.pattern = pattern;
-//# sourceMappingURL=hof.js.map
+
 });
 
 unwrapExports(hof);
@@ -34716,7 +34716,7 @@ var Glob = /** @class */ (function () {
     return Glob;
 }());
 exports.Glob = Glob;
-//# sourceMappingURL=glob.js.map
+
 });
 
 unwrapExports(glob);
@@ -34835,7 +34835,7 @@ var StateObject = /** @class */ (function () {
     return StateObject;
 }());
 exports.StateObject = StateObject;
-//# sourceMappingURL=stateObject.js.map
+
 });
 
 unwrapExports(stateObject);
@@ -34887,7 +34887,7 @@ exports.isInjectable = isInjectable;
  * It is probably a Promise if it's an object, and it has a `then` property which is a Function
  */
 exports.isPromise = hof.and(exports.isObject, hof.pipe(hof.prop('then'), exports.isFunction));
-//# sourceMappingURL=predicates.js.map
+
 });
 
 unwrapExports(predicates);
@@ -34903,7 +34903,7 @@ var services = {
     $injector: undefined,
 };
 exports.services = services;
-//# sourceMappingURL=coreservices.js.map
+
 });
 
 unwrapExports(coreservices);
@@ -35471,7 +35471,7 @@ exports.silenceUncaughtInPromise = function (promise) {
 exports.silentRejection = function (error) {
     return exports.silenceUncaughtInPromise(coreservices.services.$q.reject(error));
 };
-//# sourceMappingURL=common.js.map
+
 });
 
 unwrapExports(common$1);
@@ -35528,7 +35528,7 @@ var Queue = /** @class */ (function () {
     return Queue;
 }());
 exports.Queue = Queue;
-//# sourceMappingURL=queue.js.map
+
 });
 
 unwrapExports(queue);
@@ -35623,7 +35623,7 @@ var Rejection = /** @class */ (function () {
     return Rejection;
 }());
 exports.Rejection = Rejection;
-//# sourceMappingURL=rejectFactory.js.map
+
 });
 
 unwrapExports(rejectFactory);
@@ -35874,7 +35874,7 @@ exports.Trace = Trace;
  */
 var trace = new Trace();
 exports.trace = trace;
-//# sourceMappingURL=trace.js.map
+
 });
 
 unwrapExports(trace_1);
@@ -35895,7 +35895,7 @@ var TransitionHookScope;
     TransitionHookScope[TransitionHookScope["TRANSITION"] = 0] = "TRANSITION";
     TransitionHookScope[TransitionHookScope["STATE"] = 1] = "STATE";
 })(TransitionHookScope = exports.TransitionHookScope || (exports.TransitionHookScope = {}));
-//# sourceMappingURL=interface.js.map
+
 });
 
 unwrapExports(_interface);
@@ -36049,7 +36049,7 @@ var TargetState = /** @class */ (function () {
     return TargetState;
 }());
 exports.TargetState = TargetState;
-//# sourceMappingURL=targetState.js.map
+
 });
 
 unwrapExports(targetState);
@@ -36279,7 +36279,7 @@ var TransitionHook = /** @class */ (function () {
     return TransitionHook;
 }());
 exports.TransitionHook = TransitionHook;
-//# sourceMappingURL=transitionHook.js.map
+
 });
 
 unwrapExports(transitionHook);
@@ -36443,7 +36443,7 @@ function makeEvent(registry, transitionService, eventType) {
     return hookRegistrationFn;
 }
 exports.makeEvent = makeEvent;
-//# sourceMappingURL=hookRegistry.js.map
+
 });
 
 unwrapExports(hookRegistry);
@@ -36567,7 +36567,7 @@ function tupleSort(reverseDepthSort) {
         return depthDelta !== 0 ? depthDelta : r.hook.priority - l.hook.priority;
     };
 }
-//# sourceMappingURL=hookBuilder.js.map
+
 });
 
 unwrapExports(hookBuilder);
@@ -36714,7 +36714,7 @@ function ArrayType(type, mode) {
         $arrayMode: mode,
     });
 }
-//# sourceMappingURL=paramType.js.map
+
 });
 
 unwrapExports(paramType);
@@ -36919,7 +36919,7 @@ var Param = /** @class */ (function () {
     return Param;
 }());
 exports.Param = Param;
-//# sourceMappingURL=param.js.map
+
 });
 
 unwrapExports(param);
@@ -37005,7 +37005,7 @@ var PathNode = /** @class */ (function () {
     return PathNode;
 }());
 exports.PathNode = PathNode;
-//# sourceMappingURL=pathNode.js.map
+
 });
 
 unwrapExports(pathNode);
@@ -37184,7 +37184,7 @@ var PathUtils = /** @class */ (function () {
     return PathUtils;
 }());
 exports.PathUtils = PathUtils;
-//# sourceMappingURL=pathUtils.js.map
+
 });
 
 unwrapExports(pathUtils);
@@ -37324,7 +37324,7 @@ var Resolvable = /** @class */ (function () {
     return Resolvable;
 }());
 exports.Resolvable = Resolvable;
-//# sourceMappingURL=resolvable.js.map
+
 });
 
 unwrapExports(resolvable);
@@ -37344,7 +37344,7 @@ exports.resolvePolicies = {
         RXWAIT: 'RXWAIT',
     },
 };
-//# sourceMappingURL=interface.js.map
+
 });
 
 unwrapExports(_interface$2);
@@ -37551,7 +37551,7 @@ var UIInjectorImpl = /** @class */ (function () {
     };
     return UIInjectorImpl;
 }());
-//# sourceMappingURL=resolveContext.js.map
+
 });
 
 unwrapExports(resolveContext);
@@ -38199,7 +38199,7 @@ var Transition = /** @class */ (function () {
     return Transition;
 }());
 exports.Transition = Transition;
-//# sourceMappingURL=transition.js.map
+
 });
 
 unwrapExports(transition);
@@ -38351,7 +38351,7 @@ function joinNeighborsR(acc, x) {
     return common$1.pushR(acc, x);
 }
 exports.joinNeighborsR = joinNeighborsR;
-//# sourceMappingURL=strings.js.map
+
 });
 
 unwrapExports(strings);
@@ -38371,7 +38371,7 @@ __export(predicates);
 __export(queue);
 __export(strings);
 __export(trace_1);
-//# sourceMappingURL=index.js.map
+
 });
 
 unwrapExports(common);
@@ -38533,7 +38533,7 @@ function initDefaultTypes() {
     });
 }
 initDefaultTypes();
-//# sourceMappingURL=paramTypes.js.map
+
 });
 
 unwrapExports(paramTypes);
@@ -38582,7 +38582,7 @@ var StateParams = /** @class */ (function () {
     return StateParams;
 }());
 exports.StateParams = StateParams;
-//# sourceMappingURL=stateParams.js.map
+
 });
 
 unwrapExports(stateParams);
@@ -38597,7 +38597,7 @@ __export(param);
 __export(paramTypes);
 __export(stateParams);
 __export(paramType);
-//# sourceMappingURL=index.js.map
+
 });
 
 unwrapExports(params);
@@ -38611,7 +38611,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /** @module path */ /** for typedoc */
 __export(pathNode);
 __export(pathUtils);
-//# sourceMappingURL=index.js.map
+
 });
 
 unwrapExports(path);
@@ -38626,7 +38626,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __export(_interface$2);
 __export(resolvable);
 __export(resolveContext);
-//# sourceMappingURL=index.js.map
+
 });
 
 unwrapExports(resolve);
@@ -38911,7 +38911,7 @@ var StateBuilder = /** @class */ (function () {
     return StateBuilder;
 }());
 exports.StateBuilder = StateBuilder;
-//# sourceMappingURL=stateBuilder.js.map
+
 });
 
 unwrapExports(stateBuilder);
@@ -38982,7 +38982,7 @@ var StateMatcher = /** @class */ (function () {
     return StateMatcher;
 }());
 exports.StateMatcher = StateMatcher;
-//# sourceMappingURL=stateMatcher.js.map
+
 });
 
 unwrapExports(stateMatcher);
@@ -39079,7 +39079,7 @@ var StateQueueManager = /** @class */ (function () {
     return StateQueueManager;
 }());
 exports.StateQueueManager = StateQueueManager;
-//# sourceMappingURL=stateQueueManager.js.map
+
 });
 
 unwrapExports(stateQueueManager);
@@ -39240,7 +39240,7 @@ var StateRegistry = /** @class */ (function () {
     return StateRegistry;
 }());
 exports.StateRegistry = StateRegistry;
-//# sourceMappingURL=stateRegistry.js.map
+
 });
 
 unwrapExports(stateRegistry);
@@ -39766,7 +39766,7 @@ var UrlMatcher = /** @class */ (function () {
     return UrlMatcher;
 }());
 exports.UrlMatcher = UrlMatcher;
-//# sourceMappingURL=urlMatcher.js.map
+
 });
 
 unwrapExports(urlMatcher);
@@ -39895,7 +39895,7 @@ var UrlMatcherFactory = /** @class */ (function () {
     return UrlMatcherFactory;
 }());
 exports.UrlMatcherFactory = UrlMatcherFactory;
-//# sourceMappingURL=urlMatcherFactory.js.map
+
 });
 
 unwrapExports(urlMatcherFactory);
@@ -40109,7 +40109,7 @@ var BaseUrlRule = /** @class */ (function () {
     return BaseUrlRule;
 }());
 exports.BaseUrlRule = BaseUrlRule;
-//# sourceMappingURL=urlRule.js.map
+
 });
 
 unwrapExports(urlRule);
@@ -40426,7 +40426,7 @@ function getHandlerFn(handler) {
     }
     return predicates.isFunction(handler) ? handler : hof.val(handler);
 }
-//# sourceMappingURL=urlRouter.js.map
+
 });
 
 unwrapExports(urlRouter);
@@ -40724,7 +40724,7 @@ var ViewService = /** @class */ (function () {
     return ViewService;
 }());
 exports.ViewService = ViewService;
-//# sourceMappingURL=view.js.map
+
 });
 
 unwrapExports(view);
@@ -40767,7 +40767,7 @@ var UIRouterGlobals = /** @class */ (function () {
     return UIRouterGlobals;
 }());
 exports.UIRouterGlobals = UIRouterGlobals;
-//# sourceMappingURL=globals.js.map
+
 });
 
 unwrapExports(globals);
@@ -40848,7 +40848,7 @@ var UrlService = /** @class */ (function () {
     return UrlService;
 }());
 exports.UrlService = UrlService;
-//# sourceMappingURL=urlService.js.map
+
 });
 
 unwrapExports(urlService);
@@ -41037,7 +41037,7 @@ var UIRouter = /** @class */ (function () {
     return UIRouter;
 }());
 exports.UIRouter = UIRouter;
-//# sourceMappingURL=router.js.map
+
 });
 
 unwrapExports(router);
@@ -41078,7 +41078,7 @@ exports.treeChangesCleanup = function (trans) {
         node.resolvables = node.resolvables.map(replaceTransitionWithNull);
     });
 };
-//# sourceMappingURL=coreResolvables.js.map
+
 });
 
 unwrapExports(coreResolvables);
@@ -41120,7 +41120,7 @@ var redirectToHook = function (trans) {
 exports.registerRedirectToHook = function (transitionService) {
     return transitionService.onStart({ to: function (state) { return !!state.redirectTo; } }, redirectToHook);
 };
-//# sourceMappingURL=redirectTo.js.map
+
 });
 
 unwrapExports(redirectTo);
@@ -41182,7 +41182,7 @@ var onEnterHook = makeEnterExitRetainHook('onEnter');
 exports.registerOnEnterHook = function (transitionService) {
     return transitionService.onEnter({ entering: function (state) { return !!state.onEnter; } }, onEnterHook);
 };
-//# sourceMappingURL=onEnterExitRetain.js.map
+
 });
 
 unwrapExports(onEnterExitRetain);
@@ -41249,7 +41249,7 @@ var resolveRemaining = function (trans) {
 exports.registerResolveRemaining = function (transitionService) {
     return transitionService.onFinish({}, resolveRemaining, { priority: exports.RESOLVE_HOOK_PRIORITY });
 };
-//# sourceMappingURL=resolve.js.map
+
 });
 
 unwrapExports(resolve$1);
@@ -41301,7 +41301,7 @@ var activateViews = function (transition) {
 exports.registerActivateViews = function (transitionService) {
     return transitionService.onSuccess({}, activateViews);
 };
-//# sourceMappingURL=views.js.map
+
 });
 
 unwrapExports(views);
@@ -41341,7 +41341,7 @@ var updateGlobalState = function (trans) {
 exports.registerUpdateGlobalState = function (transitionService) {
     return transitionService.onCreate({}, updateGlobalState);
 };
-//# sourceMappingURL=updateGlobals.js.map
+
 });
 
 unwrapExports(updateGlobals);
@@ -41371,7 +41371,7 @@ var updateUrl = function (transition) {
 exports.registerUpdateUrl = function (transitionService) {
     return transitionService.onSuccess({}, updateUrl, { priority: 9999 });
 };
-//# sourceMappingURL=url.js.map
+
 });
 
 unwrapExports(url);
@@ -41473,7 +41473,7 @@ function lazyLoadState(transition, state) {
     return promise;
 }
 exports.lazyLoadState = lazyLoadState;
-//# sourceMappingURL=lazyLoad.js.map
+
 });
 
 unwrapExports(lazyLoad);
@@ -41507,7 +41507,7 @@ var TransitionEventType = /** @class */ (function () {
     return TransitionEventType;
 }());
 exports.TransitionEventType = TransitionEventType;
-//# sourceMappingURL=transitionEventType.js.map
+
 });
 
 unwrapExports(transitionEventType);
@@ -41543,7 +41543,7 @@ function ignoredHook(trans) {
 exports.registerIgnoredTransitionHook = function (transitionService) {
     return transitionService.onBefore({}, ignoredHook, { priority: -9999 });
 };
-//# sourceMappingURL=ignoredTransition.js.map
+
 });
 
 unwrapExports(ignoredTransition);
@@ -41567,7 +41567,7 @@ function invalidTransitionHook(trans) {
 exports.registerInvalidTransitionHook = function (transitionService) {
     return transitionService.onBefore({}, invalidTransitionHook, { priority: -10000 });
 };
-//# sourceMappingURL=invalidTransition.js.map
+
 });
 
 unwrapExports(invalidTransition);
@@ -41812,7 +41812,7 @@ var TransitionService = /** @class */ (function () {
     return TransitionService;
 }());
 exports.TransitionService = TransitionService;
-//# sourceMappingURL=transitionService.js.map
+
 });
 
 unwrapExports(transitionService);
@@ -42382,7 +42382,7 @@ var StateService = /** @class */ (function () {
     return StateService;
 }());
 exports.StateService = StateService;
-//# sourceMappingURL=stateService.js.map
+
 });
 
 unwrapExports(stateService);
@@ -42400,7 +42400,7 @@ __export(stateQueueManager);
 __export(stateRegistry);
 __export(stateService);
 __export(targetState);
-//# sourceMappingURL=index.js.map
+
 });
 
 unwrapExports(state);
@@ -42433,7 +42433,7 @@ __export(transition);
 __export(transitionHook);
 __export(transitionEventType);
 __export(transitionService);
-//# sourceMappingURL=index.js.map
+
 });
 
 unwrapExports(transition$2);
@@ -42449,7 +42449,7 @@ __export(urlMatcherFactory);
 __export(urlRouter);
 __export(urlRule);
 __export(urlService);
-//# sourceMappingURL=index.js.map
+
 });
 
 unwrapExports(url$2);
@@ -42461,7 +42461,7 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(view);
-//# sourceMappingURL=index.js.map
+
 });
 
 unwrapExports(view$2);
@@ -42521,7 +42521,7 @@ exports.$q = {
         }
     },
 };
-//# sourceMappingURL=q.js.map
+
 });
 
 unwrapExports(q);
@@ -42626,7 +42626,7 @@ exports.$injector = {
         return result || [];
     },
 };
-//# sourceMappingURL=injector.js.map
+
 });
 
 unwrapExports(injector);
@@ -42686,7 +42686,7 @@ function locationPluginFactory(name, isHtml5, serviceClass, configurationClass) 
     };
 }
 exports.locationPluginFactory = locationPluginFactory;
-//# sourceMappingURL=utils.js.map
+
 });
 
 unwrapExports(utils);
@@ -42734,7 +42734,7 @@ var BaseLocationServices = /** @class */ (function () {
     return BaseLocationServices;
 }());
 exports.BaseLocationServices = BaseLocationServices;
-//# sourceMappingURL=baseLocationService.js.map
+
 });
 
 unwrapExports(baseLocationService);
@@ -42780,7 +42780,7 @@ var HashLocationService = /** @class */ (function (_super) {
     return HashLocationService;
 }(baseLocationService.BaseLocationServices));
 exports.HashLocationService = HashLocationService;
-//# sourceMappingURL=hashLocationService.js.map
+
 });
 
 unwrapExports(hashLocationService);
@@ -42819,7 +42819,7 @@ var MemoryLocationService = /** @class */ (function (_super) {
     return MemoryLocationService;
 }(baseLocationService.BaseLocationServices));
 exports.MemoryLocationService = MemoryLocationService;
-//# sourceMappingURL=memoryLocationService.js.map
+
 });
 
 unwrapExports(memoryLocationService);
@@ -42899,7 +42899,7 @@ var PushStateLocationService = /** @class */ (function (_super) {
     return PushStateLocationService;
 }(baseLocationService.BaseLocationServices));
 exports.PushStateLocationService = PushStateLocationService;
-//# sourceMappingURL=pushStateLocationService.js.map
+
 });
 
 unwrapExports(pushStateLocationService);
@@ -42929,7 +42929,7 @@ var MemoryLocationConfig = /** @class */ (function () {
     return MemoryLocationConfig;
 }());
 exports.MemoryLocationConfig = MemoryLocationConfig;
-//# sourceMappingURL=memoryLocationConfig.js.map
+
 });
 
 unwrapExports(memoryLocationConfig);
@@ -42981,7 +42981,7 @@ var BrowserLocationConfig = /** @class */ (function () {
     return BrowserLocationConfig;
 }());
 exports.BrowserLocationConfig = BrowserLocationConfig;
-//# sourceMappingURL=browserLocationConfig.js.map
+
 });
 
 unwrapExports(browserLocationConfig);
@@ -43015,7 +43015,7 @@ exports.hashLocationPlugin = utils.locationPluginFactory('vanilla.hashBangLocati
 exports.pushStateLocationPlugin = utils.locationPluginFactory('vanilla.pushStateLocation', true, pushStateLocationService.PushStateLocationService, browserLocationConfig.BrowserLocationConfig);
 /** A `UIRouterPlugin` that gets/sets the current location from an in-memory object */
 exports.memoryLocationPlugin = utils.locationPluginFactory('vanilla.memoryLocation', false, memoryLocationService.MemoryLocationService, memoryLocationConfig.MemoryLocationConfig);
-//# sourceMappingURL=plugins.js.map
+
 });
 
 unwrapExports(plugins);
@@ -43036,7 +43036,7 @@ __export(memoryLocationConfig);
 __export(browserLocationConfig);
 __export(utils);
 __export(plugins);
-//# sourceMappingURL=index.js.map
+
 });
 
 unwrapExports(vanilla$2);
@@ -43053,7 +43053,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */
 /** */
 __export(vanilla$2);
-//# sourceMappingURL=vanilla.js.map
+
 });
 
 unwrapExports(vanilla);
@@ -43079,7 +43079,7 @@ var UIRouterPluginBase = /** @class */ (function () {
     return UIRouterPluginBase;
 }());
 exports.UIRouterPluginBase = UIRouterPluginBase;
-//# sourceMappingURL=interface.js.map
+
 });
 
 unwrapExports(_interface$4);
@@ -43106,7 +43106,7 @@ __export(globals);
 __export(router);
 __export(vanilla);
 __export(_interface$4);
-//# sourceMappingURL=index.js.map
+
 });
 
 unwrapExports(lib);
@@ -45108,7 +45108,7 @@ exports.UrlRouterProvider = UrlRouterProvider;
 Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
-//# sourceMappingURL=ui-router-angularjs.js.map
+
 });
 
 unwrapExports(uiRouterAngularjs);
@@ -90210,7 +90210,7 @@ class AddUserCtrl {
 AddUserCtrl.$inject = ['$state', 'userService'];
 App.controller('addUserCtrl', AddUserCtrl);
 
-var html$7 = "<md-content class=\"md-padding\" layout=\"column\" layout-wrap layout-padding>\r\n    <form name=\"userForm\" ng-submit=\"$ctrl.saveUser()\">\r\n        <div layout=\"column\">\r\n            <md-input-container class=\"md-block\">\r\n                <label>Nombre</label>\r\n                <input required type=\"string\" name=\"nombre\" ng-model=\"$ctrl.user.nombre\" pattern=\"^[a-zA-Z]{1,15}\" />\r\n                <div ng-messages=\"userForm.nombre.$error\" md-auto-hide=\"false\">\r\n                    <div ng-message=\"pattern\">\r\n                        Solo admite letras\r\n                    </div>\r\n                </div>\r\n            </md-input-container>\r\n\r\n            <md-input-container class=\"md-block\">\r\n                <label>Apellido</label>\r\n                <input required type=\"string\" name=\"apellidos\" ng-model=\"$ctrl.user.apellidos\" pattern=\"^[a-zA-Z]{1,15}\" />\r\n                <div ng-messages=\"userForm.apellidos.$error\" md-auto-hide=\"false\">\r\n                    <div ng-message=\"pattern\">\r\n                        Solo admite letras\r\n                    </div>\r\n                </div>\r\n            </md-input-container>\r\n\r\n            <md-input-container class=\"md-block\">\r\n                <label>Usuario(email)</label>\r\n                <input required type=\"email\" name=\"email\" ng-model=\"$ctrl.user.email\" pattern=\"[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$\" />\r\n                <div ng-messages=\"userForm.email.$error\" md-auto-hide=\"false\">\r\n                    <div ng-message=\"pattern\">\r\n                        Introduce correo estilo xyz@dominio.nombredominio\r\n                    </div>\r\n                </div>\r\n            </md-input-container>\r\n\r\n            <md-input-container class=\"md-block\">\r\n                <label>Contraseña</label>\r\n                <input required id=\"password\" type=\"password\" name=\"password\" ng-model=\"$ctrl.user.password\" pattern=\"(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{6,}\"\r\n                    onchange=\"if(this.checkValidity()) form.password_two.pattern = this.value;\" />\r\n                <div ng-messages=\"userForm.password.$error\" md-auto-hide=\"false\">\r\n                    <div ng-message=\"password\">\r\n                        Tiene que tener al menos 6, una minúscula, una mayúscula\r\n                    </div>\r\n                </div>\r\n            </md-input-container>\r\n\r\n            <md-input-container class=\"md-block\">\r\n                <label>Repetir contraseña</label>\r\n                <input required id=\"password_two\" type=\"password\" name=\"confirmPassword\" ng-model=\"$ctrl.user.confirmPassword\" onchange=\"this.setCustomValidity(this.validity.patternMismatch ? 'Las contraseñas no coinciden' : '');\"/>\r\n            </md-input-container>\r\n\r\n\r\n            <md-input-container class=\"md-block\">\r\n                <label>Aceptar terminos y condiciones</label>\r\n                <input required checked type=\"checkbox\" name=\"accept\" ng-model=\"$ctrl.user.accept\" />\r\n            </md-input-container>\r\n\r\n            <md-button class=\"md-primary\" type=\"submit\">Registrar</md-button>\r\n\r\n    </form>\r\n</md-content>";
+var html$7 = "<md-content class=\"md-padding\" layout=\"column\" layout-wrap layout-padding>\r\n    <form name=\"userForm\" ng-submit=\"$ctrl.saveUser()\">\r\n        <div layout=\"column\">\r\n            <md-input-container class=\"md-block\">\r\n                <label>Nombre</label>\r\n                <input required type=\"string\" name=\"nombre\" ng-model=\"$ctrl.user.nombre\" pattern=\"^[a-zA-Z]{1,15}\" />\r\n                <div ng-messages=\"userForm.nombre.$error\" md-auto-hide=\"false\">\r\n                    <div ng-message=\"pattern\">\r\n                        Solo admite letras\r\n                    </div>\r\n                </div>\r\n            </md-input-container>\r\n\r\n            <md-input-container class=\"md-block\">\r\n                <label>Apellido</label>\r\n                <input required type=\"string\" name=\"apellidos\" ng-model=\"$ctrl.user.apellidos\" pattern=\"^[a-zA-Z]{1,15}\" />\r\n                <div ng-messages=\"userForm.apellidos.$error\" md-auto-hide=\"false\">\r\n                    <div ng-message=\"pattern\">\r\n                        Solo admite letras\r\n                    </div>\r\n                </div>\r\n            </md-input-container>\r\n\r\n            <md-input-container class=\"md-block\">\r\n                <label>Usuario(email)</label>\r\n                <input required type=\"email\" name=\"email\" ng-model=\"$ctrl.user.email\" pattern=\"[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$\" />\r\n                <div ng-messages=\"userForm.email.$error\" md-auto-hide=\"false\">\r\n                    <div ng-message=\"pattern\">\r\n                        Introduce correo estilo xyz@dominio.nombredominio\r\n                    </div>\r\n                </div>\r\n            </md-input-container>\r\n\r\n            <md-input-container class=\"md-block\">\r\n                <label>Contraseña</label>\r\n                <input required id=\"password\" type=\"password\" name=\"password\" ng-model=\"$ctrl.user.password\" pattern=\"(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{6,}\"\r\n                    onchange=\"if(this.checkValidity()) form.password_two.pattern = this.value;\" />\r\n                <div ng-messages=\"userForm.password.$error\" md-auto-hide=\"false\">\r\n                    <div ng-message=\"pattern\">\r\n                        Tiene que tener al menos 6, una minúscula, una mayúscula\r\n                    </div>\r\n                </div>\r\n            </md-input-container>\r\n\r\n            <md-input-container class=\"md-block\">\r\n                <label>Repetir contraseña</label>\r\n                <input required id=\"password_two\" type=\"password\" name=\"confirmPassword\" ng-model=\"$ctrl.user.confirmPassword\" onchange=\"this.setCustomValidity(this.validity.patternMismatch ? 'Las contraseñas no coinciden' : '');\"/>\r\n            </md-input-container>\r\n\r\n\r\n            <md-input-container class=\"md-block\">\r\n                <label>Aceptar terminos y condiciones</label>\r\n                <input required checked type=\"checkbox\" name=\"accept\" ng-model=\"$ctrl.user.accept\" />\r\n            </md-input-container>\r\n\r\n            <md-button class=\"md-primary\" type=\"submit\">Registrar</md-button>\r\n\r\n    </form>\r\n</md-content>";
 
 const ilAddUser = {
     controller: 'addUserCtrl',
