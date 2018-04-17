@@ -1,0 +1,23 @@
+<md-content class="md-padding" layout="column" layout-wrap layout-padding>
+    <form name="pizzaForm" ng-submit="$ctrl.savePizza()">
+        <div layout="column">
+            <md-input-container class="md-block">
+                <label>Pizza:</label>
+                <input required type="string" name="name" ng-model="$ctrl.pizza.name" />
+                <div ng-messages="pizzaForm.name.$error" md-auto-hide="false">
+                    <div ng-message="required">
+                        You've got to put a name!
+                    </div>
+                </div>
+            </md-input-container>
+            <md-input-container>
+                <label>Ingredients:</label>
+                <il-ingredient-selector pizza="$ctrl.pizza"> </il-ingredient-selector>
+            </md-input-container>
+        </div>
+        <il-img-uploader pizza="$ctrl.pizza"></il-img-uploader>
+        <div layout="row">
+            <md-button class="md-primary" type="submit">Submit</md-button>
+        </div>
+    </form>
+</md-content>

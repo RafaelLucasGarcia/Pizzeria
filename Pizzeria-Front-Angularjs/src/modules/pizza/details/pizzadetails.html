@@ -1,0 +1,34 @@
+<md-content class="md-padding" layout-xs="column" layout="row">
+    <div layout="column">
+        <il-pizza-card name="{{$ctrl.name}}" img="{{$ctrl.img}}"></il-pizza-card>
+        <md-content layout-padding>
+            <form name="commentForm" ng-submit="$ctrl.submitComment()">
+                <md-input-container class="md-block">
+                    <label>Score</label>
+                    <input required type="number" step="any" name="score" ng-model="$ctrl.comment.score" min="0" max="10" />
+                    <div ng-messages="commentForm.score.$error" multiple md-auto-hide="false">
+                        <div ng-message="required">
+                            You've got to put a score!
+                        </div>
+                        <div ng-message="min">
+                            You should score at least 0.
+                        </div>
+                        <div ng-message="max">
+                            That's a little ridiculous.
+                        </div>
+                    </div>
+                </md-input-container>
+                <md-input-container class="md-block">
+                    <textarea name="text" ng-model="$ctrl.comment.text" md-maxlength="150"></textarea>
+                </md-input-container>
+                <div>
+                    <md-button type="submit">Submit</md-button>
+                </div>
+            </form>
+        </md-content>
+        <il-comment-list comments=$ctrl.comments ng-show="$ctrl.hasComments()"></il-comment-list>
+    </div>
+    <div layout="row" flex>
+        <il-ingredient-list ingredients=$ctrl.ingredients ng-show="$ctrl.hasIngredients()"></il-ingredient-list>
+    </div>
+</md-content>

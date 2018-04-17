@@ -1,0 +1,59 @@
+<md-content class="md-padding" layout="column" layout-wrap layout-padding>
+    <form name="userForm" ng-submit="$ctrl.saveUser()">
+        <div layout="column">
+            <md-input-container class="md-block">
+                <label>Nombre</label>
+                <input required type="string" name="nombre" ng-model="$ctrl.user.nombre" pattern="^[a-zA-Z]{1,15}" />
+                <div ng-messages="userForm.nombre.$error" md-auto-hide="false">
+                    <div ng-message="pattern">
+                        Solo admite letras
+                    </div>
+                </div>
+            </md-input-container>
+
+            <md-input-container class="md-block">
+                <label>Apellido</label>
+                <input required type="string" name="apellidos" ng-model="$ctrl.user.apellidos" pattern="^[a-zA-Z]{1,15}" />
+                <div ng-messages="userForm.apellidos.$error" md-auto-hide="false">
+                    <div ng-message="pattern">
+                        Solo admite letras
+                    </div>
+                </div>
+            </md-input-container>
+
+            <md-input-container class="md-block">
+                <label>Usuario(email)</label>
+                <input required type="email" name="email" ng-model="$ctrl.user.email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+                <div ng-messages="userForm.email.$error" md-auto-hide="false">
+                    <div ng-message="pattern">
+                        Introduce correo estilo xyz@dominio.nombredominio
+                    </div>
+                </div>
+            </md-input-container>
+
+            <md-input-container class="md-block">
+                <label>Contraseña</label>
+                <input required id="password" type="password" name="password" ng-model="$ctrl.user.password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                    onchange="if(this.checkValidity()) form.password_two.pattern = this.value;" />
+                <div ng-messages="userForm.password.$error" md-auto-hide="false">
+                    <div ng-message="pattern">
+                        Tiene que tener al menos 6, una minúscula, una mayúscula
+                    </div>
+                </div>
+            </md-input-container>
+
+            <md-input-container class="md-block">
+                <label>Repetir contraseña</label>
+                <input required id="password_two" type="password" name="confirmPassword" ng-model="$ctrl.user.confirmPassword" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Las contraseñas no coinciden' : '');"/>
+            </md-input-container>
+
+
+            <md-input-container class="md-block">
+                <label>Aceptar terminos y condiciones</label>
+                <input required checked type="checkbox" name="accept" ng-model="$ctrl.user.accept" />
+            </md-input-container>
+
+            <md-button class="md-primary" type="submit">Registrar</md-button>
+
+    </form>
+</md-content>

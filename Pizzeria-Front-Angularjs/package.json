@@ -1,0 +1,48 @@
+{
+  "name": "pizzashop",
+  "version": "1.0.0",
+  "description": "pizza shop with AngularJS",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "build:dev": "rollup -c rollup.config.dev.js --watch",
+    "serve-json": "json-server --watch db.json",
+    "start": "npm-run-all --parallel build:dev serve-json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isidrok/pizzashop-angular-front.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isidrok/pizzashop-angular-front/issues"
+  },
+  "homepage": "https://github.com/isidrok/pizzashop-angular-front#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "json-server": "^0.10.0",
+    "npm-run-all": "^4.0.2",
+    "postcss-cssnext": "^2.11.0",
+    "rollup": "^0.41.6",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-livereload": "^0.4.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-postcss": "^0.4.1",
+    "rollup-plugin-serve": "^0.3.0",
+    "rollup-plugin-string": "^2.0.2",
+    "rollup-plugin-uglify": "^1.0.2",
+    "rollup-watch": "^3.2.2"
+  },
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.1",
+    "angular": "^1.5.11",
+    "angular-animate": "^1.6.4",
+    "angular-aria": "^1.6.4",
+    "angular-material": "^1.1.4",
+    "angular-messages": "^1.6.4",
+    "ng-file-upload": "^12.2.13"
+  }
+}

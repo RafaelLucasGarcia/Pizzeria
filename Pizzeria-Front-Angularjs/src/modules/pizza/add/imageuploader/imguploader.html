@@ -1,0 +1,12 @@
+<div layout="row">
+    <div>
+        <div class="md-button md-primary" type="file" il-img-viewer ngf-select ng-required ng-model="$ctrl.pizza.img" name="file" ngf-max-size="2MB"
+            ngf-resize="{width: 296, height: 296}">
+            Upload Image
+        </div>
+        <label class="md-subhead">{{$ctrl.pizza.img.$ngfName}}</label>
+        <div>
+            <img id="preview" />
+        </div>
+    </div>
+</div>
