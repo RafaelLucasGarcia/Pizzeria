@@ -53,7 +53,7 @@
                 <input required checked type="checkbox" name="accept" ng-model="$ctrl.user.accept" />
             </md-input-container>
 
-            <md-button class="md-primary" type="submit">Registrar</md-button>
+            <md-button class="md-primary" type="submit" ng-disabled="userForm.$invalid">Registrar</md-button>
 
     </form>
 </md-content>

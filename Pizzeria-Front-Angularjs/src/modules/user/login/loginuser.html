@@ -23,7 +23,7 @@
                 <input required type="hidden" name="grant_type" value="password" ng-model="$ctrl.user.grant_type" />
         </md-input-container>
 
-            <md-button class="md-primary" type="submit">Login</md-button>
+            <md-button class="md-primary" ng-disabled="userForm.$invalid" type="submit">Login</md-button>
 
     </form>
 </md-content>
