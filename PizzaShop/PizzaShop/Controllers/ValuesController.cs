@@ -27,7 +27,7 @@ namespace PizzaShop.Controllers
         // GET api/values/5
         public string Get(int id)
         {
-            var pizza = new Pizza() { Id = Guid.NewGuid(), Name = "Margarita" };
+            var pizza = new Pizza() { Id = Guid.NewGuid(), Name = "Peperoni" };
             pizza.Comments.Add(new Comments() { Id = Guid.NewGuid(), Name = "De puta madre.", UserName = "Pedro" });
             _logger.Write(pizza);
 
