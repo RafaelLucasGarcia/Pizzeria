@@ -5,7 +5,8 @@ export const ilMenu = {
   template: html,
   bindings:{
       closeSidenav: "=",
-      mdSidenav:"="
+      mdSidenav:"=",
+            
   }
 }
 App.component('ilMenu', ilMenu); 

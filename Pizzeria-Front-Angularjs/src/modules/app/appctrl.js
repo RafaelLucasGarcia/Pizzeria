@@ -13,6 +13,7 @@ export class AppCtrl {
     closeSidenav() {
         this.mdSidenav("sidenav").close();
     }
+    
 }
-AppCtrl.$inject = ['$mdSidenav'];
+AppCtrl.$inject = ['$mdSidenav', 'localStorageService'];
 App.controller('appCtrl', AppCtrl);

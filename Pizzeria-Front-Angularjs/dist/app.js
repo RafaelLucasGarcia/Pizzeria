@@ -90851,6 +90851,44 @@ const ilLoginUser = {
 };
 App.component('ilLoginUser', ilLoginUser);
 
+config$6.$inject = ["$stateProvider"];
+function config$6(stateProvider) {
+    stateProvider.state('logoutuser', {
+        parent: 'app',
+        url: 'users/logout',
+        component: 'ilLogoutUser'
+    });
+}
+App.config(config$6);
+
+class LogoutUserCtrl {
+    constructor(state, userService) {
+        this.userService = userService;
+        this.state = state;
+        this.user = {
+            email: null,
+            password: null,
+            grant_type: "password"
+        };
+        this.IsAuth = false;
+    }
+
+    logoutUser() {
+        this.userService.logout();
+    }
+}
+
+LogoutUserCtrl.$inject = ['$state', 'userService'];
+App.controller('logoutUserCtrl', LogoutUserCtrl);
+
+var html$9 = "<md-content class=\"md-padding\" layout=\"column\" layout-wrap layout-padding>\r\n    <form name=\"userForm\" ng-submit=\"$ctrl.logoutUser()\">\r\n        <div layout=\"column\">\r\n            ¿Seguro que te vas?\r\n\r\n            <md-button class=\"md-primary\" type=\"submit\"> Logout</md-button>\r\n\r\n    </form>\r\n</md-content>";
+
+const ilLogoutUser = {
+    controller: 'logoutUserCtrl',
+    template: html$9
+};
+App.component('ilLogoutUser', ilLogoutUser);
+
 class UserService extends BaseService {
     constructor(http, resolveUrl, localStorageService) {
         super(http, resolveUrl, 'api/Account/Register', 'Token');
@@ -90873,16 +90911,26 @@ class UserService extends BaseService {
         var data = "grant_type=password&username=" + user.email + "&password=" + user.password;
         var self = this;
         return this.http.post(super.getRouteToken(), data, { headers: { 'Content-Type': "application/x-www-form-urlencoded" } }).then(function (response) {
+<<<<<<< HEAD
+            self._localStorage.set('authorizationData', { token: response.data.access_token, mail: user.mail });
+=======
             self._localStorage.set('authorizationData', { token: response.access_token, mail: user.mail });
+>>>>>>> origin/LoginDev
             return response;
         }, function error(response) {
             return response;
         });
     }
+<<<<<<< HEAD
+    logout() {
+        var self = this;
+        self._localStorage.remove('authorizationData');
+=======
 
     logOut(user) {
         this.localStorageService.remove('authorizationData');
         this.isAuth = false;
+>>>>>>> origin/LoginDev
     }
 }
 UserService.$inject = ['$http', 'resolveUrl', 'localStorageService'];
@@ -90899,7 +90947,7 @@ class IngredientService extends BaseService {
 IngredientService.$inject = ['$http', 'resolveUrl'];
 App.service('ingredientService', IngredientService);
 
-var html$9 = "<md-select ng-model=\"$ctrl.pizza.ingredients\" multiple>\r\n    <md-option ng-repeat=\"ingredient in $ctrl.ingredients\" ng-value=\"{{ingredient}}\">\r\n        {{ingredient.name}}\r\n    </md-option>\r\n</md-select>";
+var html$10 = "<md-select ng-model=\"$ctrl.pizza.ingredients\" multiple>\r\n    <md-option ng-repeat=\"ingredient in $ctrl.ingredients\" ng-value=\"{{ingredient}}\">\r\n        {{ingredient.name}}\r\n    </md-option>\r\n</md-select>";
 
 class IngredientSelectorCtrl {
     constructor(ingredientService) {
@@ -90916,7 +90964,7 @@ IngredientSelectorCtrl.$inject = ['ingredientService'];
 App.controller('ingredientSelectorCtrl', IngredientSelectorCtrl);
 
 const ilIngredientSelector = {
-    template: html$9,
+    template: html$10,
     controller: 'ingredientSelectorCtrl',
     bindings: {
         pizza: "="
@@ -90935,30 +90983,35 @@ class CommentService extends BaseService {
 CommentService.$inject = ['$http', 'resolveUrl'];
 App.service('commentService', CommentService);
 
-config$6.$inject = ["$stateProvider"];
-function config$6(stateProvider) {
+config$7.$inject = ["$stateProvider"];
+function config$7(stateProvider) {
     stateProvider.state('app', {
         url: '/',
         component: 'ilApp'
     });
 }
-App.config(config$6);
+App.config(config$7);
 
+<<<<<<< HEAD
+var html$11 = "<md-sidenav md-component-id=\"sidenav\" class=\"md-sidenav-left\" md-component-id=\"left\" style=\"position:fixed\" md-is-locked-open=\"$mdMedia('gt-sm')\"\r\n  md-whiteframe=\"4\">\r\n  <md-toolbar class=\"md-theme-indigo\">\r\n    <img src=\"img/pokepizza.png\" alt=\"Logo Pizzeria\" height=\"320\" width=\"320\">\r\n    <h1 class=\"md-toolbar-tools\">Pizzeria La Toscana</h1>\r\n  </md-toolbar>\r\n  <md-content layout=\"column\" layout-padding>\r\n    <md-button class=\"md-primary\" ui-sref=\"loginuser\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Login\r\n    </md-button>\r\n    <md-button class=\"md-primary\" ui-sref=\"adduser\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Registro\r\n    </md-button>\r\n    <md-button class=\"md-primary\" ui-sref=\"pizzalist\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Mostrar pizzas\r\n    </md-button>\r\n    <md-button class=\"md-primary\" ui-sref=\"addpizza\" ng-hide=\"!isAuth\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Añadir pizza\r\n    </md-button>\r\n    <md-button class=\"md-primary\" ui-sref=\"logoutuser\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Logout\r\n    </md-button>\r\n  </md-content>\r\n</md-sidenav>\r\n<!--data-ng-hide=\"!isAuth\"-->";
+=======
 var html$10 = "<md-sidenav md-component-id=\"sidenav\" class=\"md-sidenav-left\" md-component-id=\"left\" style=\"position:fixed\" md-is-locked-open=\"$mdMedia('gt-sm')\"\r\n  md-whiteframe=\"4\">\r\n  <md-toolbar class=\"md-theme-indigo\">\r\n    <img src=\"img/pokepizza.png\" alt=\"Logo Pizzeria\" height=\"320\" width=\"320\">\r\n    <h1 class=\"md-toolbar-tools\">Pizzeria La Toscana</h1>\r\n  </md-toolbar>\r\n  <md-content layout=\"column\" layout-padding>\r\n    <md-button class=\"md-primary\" ui-sref=\"loginuser\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Login\r\n    </md-button>\r\n    <md-button class=\"md-primary\" ui-sref=\"adduser\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Registro\r\n    </md-button>\r\n    <md-button class=\"md-primary\" ui-sref=\"pizzalist\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Mostrar pizzas\r\n    </md-button>\r\n    <md-button class=\"md-primary\" ui-sref=\"addpizza\" data-ng-hide=\"!isAuth\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Añadir pizza\r\n    </md-button>\r\n    <md-button class=\"md-primary\" ui-sref=\"logout\" data-ng-hide=\"!isAuth\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Logout\r\n    </md-button>\r\n  </md-content>\r\n</md-sidenav>";
+>>>>>>> origin/LoginDev
 
 const ilMenu = {
-  template: html$10,
+  template: html$11,
   bindings: {
     closeSidenav: "=",
     mdSidenav: "="
+
   }
 };
 App.component('ilMenu', ilMenu);
 
-var html$11 = "<md-toolbar layout-align=\"center center\" layout=\"row\" class=\"site-content-toolbar\" ng-show=\"$ctrl.isSidenavClosed()\">\r\n    <img src=\"img/menu.png\" class=\"md-icon-button md-button\" ng-click=\"$ctrl.openSidenav()\"></img>\r\n    <h1 class=\"md-toolbar-tools\">Pizzeria La Toscana</h1>\r\n</md-toolbar>";
+var html$12 = "<md-toolbar layout-align=\"center center\" layout=\"row\" class=\"site-content-toolbar\" ng-show=\"$ctrl.isSidenavClosed()\">\r\n    <img src=\"img/menu.png\" class=\"md-icon-button md-button\" ng-click=\"$ctrl.openSidenav()\"></img>\r\n    <h1 class=\"md-toolbar-tools\">Pizzeria La Toscana</h1>\r\n</md-toolbar>";
 
 const ilToolBar = {
-    template: html$11,
+    template: html$12,
     bindings: {
         isSidenavClosed: "=",
         openSidenav: "=",
@@ -90967,10 +91020,10 @@ const ilToolBar = {
 };
 App.component('ilToolBar', ilToolBar);
 
-var html$12 = "<md-content flex layout-padding>\r\n  <div ui-view flex></div>\r\n</md-content>";
+var html$13 = "<md-content flex layout-padding>\r\n  <div ui-view flex></div>\r\n</md-content>";
 
 const ilContent = {
-  template: html$12
+  template: html$13
 };
 App.component('ilContent', ilContent);
 
@@ -90987,14 +91040,15 @@ class AppCtrl {
     closeSidenav() {
         this.mdSidenav("sidenav").close();
     }
+
 }
-AppCtrl.$inject = ['$mdSidenav'];
+AppCtrl.$inject = ['$mdSidenav', 'localStorageService'];
 App.controller('appCtrl', AppCtrl);
 
-var html$13 = "<div layout=\"column\" ng-cloak>\r\n    <section layout=\"row\" flex>\r\n        <il-menu close-sidenav=\"$ctrl.closeSidenav\" md-sidenav=\"$ctrl.mdSidenav\"></il-menu>\r\n        <div layout=\"column\" flex>\r\n            <il-tool-bar layout-align=\"center center\" layout=\"row\" class=\"site-content-toolbar\" is-sidenav-closed=\"$ctrl.isSidenavClosed\"\r\n                open-sidenav=\"$ctrl.openSidenav\" md-sidenav=\"$ctrl.mdSidenav\">\r\n            </il-tool-bar>\r\n            <il-content flex layout-padding class=\"content\"></il-content>\r\n        </div>\r\n    </section>\r\n</div>";
+var html$14 = "<div layout=\"column\" ng-cloak>\r\n    <section layout=\"row\" flex>\r\n        <il-menu close-sidenav=\"$ctrl.closeSidenav\" md-sidenav=\"$ctrl.mdSidenav\"></il-menu>\r\n        <div layout=\"column\" flex>\r\n            <il-tool-bar layout-align=\"center center\" layout=\"row\" class=\"site-content-toolbar\" is-sidenav-closed=\"$ctrl.isSidenavClosed\"\r\n                open-sidenav=\"$ctrl.openSidenav\" md-sidenav=\"$ctrl.mdSidenav\">\r\n            </il-tool-bar>\r\n            <il-content flex layout-padding class=\"content\"></il-content>\r\n        </div>\r\n    </section>\r\n</div>";
 
 const ilApp = {
-    template: html$13,
+    template: html$14,
     controller: 'appCtrl'
 };
 
@@ -91012,6 +91066,7 @@ exports.ilAddPizza = ilAddPizza;
 exports.PizzaService = PizzaService;
 exports.ilAddUser = ilAddUser;
 exports.ilLoginUser = ilLoginUser;
+exports.ilLogoutUser = ilLogoutUser;
 exports.UserService = UserService;
 exports.IngredientService = IngredientService;
 exports.ilIngredientSelector = ilIngredientSelector;
