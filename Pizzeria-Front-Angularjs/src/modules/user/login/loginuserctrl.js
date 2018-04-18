@@ -8,12 +8,15 @@ export class LoginUserCtrl {
             email: null,
             password: null,
             grant_type: "password",
-        };
+        }
+        this.IsAuth = false;
     }
     loginUser() {
         let self = this;
         this.userService.login(this.user)
-            .then(function () {
+            .then(function (response) {
+                self.IsAuth = true;        
+            },function (response){                
             })
     };
 }
