@@ -90911,15 +90911,26 @@ class UserService extends BaseService {
         var data = "grant_type=password&username=" + user.email + "&password=" + user.password;
         var self = this;
         return this.http.post(super.getRouteToken(), data, { headers: { 'Content-Type': "application/x-www-form-urlencoded" } }).then(function (response) {
+<<<<<<< HEAD
             self._localStorage.set('authorizationData', { token: response.data.access_token, mail: user.mail });
+=======
+            self._localStorage.set('authorizationData', { token: response.access_token, mail: user.mail });
+>>>>>>> origin/LoginDev
             return response;
         }, function error(response) {
             return response;
         });
     }
+<<<<<<< HEAD
     logout() {
         var self = this;
         self._localStorage.remove('authorizationData');
+=======
+
+    logOut(user) {
+        this.localStorageService.remove('authorizationData');
+        this.isAuth = false;
+>>>>>>> origin/LoginDev
     }
 }
 UserService.$inject = ['$http', 'resolveUrl', 'localStorageService'];
@@ -90981,7 +90992,11 @@ function config$7(stateProvider) {
 }
 App.config(config$7);
 
+<<<<<<< HEAD
 var html$11 = "<md-sidenav md-component-id=\"sidenav\" class=\"md-sidenav-left\" md-component-id=\"left\" style=\"position:fixed\" md-is-locked-open=\"$mdMedia('gt-sm')\"\r\n  md-whiteframe=\"4\">\r\n  <md-toolbar class=\"md-theme-indigo\">\r\n    <img src=\"img/pokepizza.png\" alt=\"Logo Pizzeria\" height=\"320\" width=\"320\">\r\n    <h1 class=\"md-toolbar-tools\">Pizzeria La Toscana</h1>\r\n  </md-toolbar>\r\n  <md-content layout=\"column\" layout-padding>\r\n    <md-button class=\"md-primary\" ui-sref=\"loginuser\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Login\r\n    </md-button>\r\n    <md-button class=\"md-primary\" ui-sref=\"adduser\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Registro\r\n    </md-button>\r\n    <md-button class=\"md-primary\" ui-sref=\"pizzalist\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Mostrar pizzas\r\n    </md-button>\r\n    <md-button class=\"md-primary\" ui-sref=\"addpizza\" ng-hide=\"!isAuth\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Añadir pizza\r\n    </md-button>\r\n    <md-button class=\"md-primary\" ui-sref=\"logoutuser\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Logout\r\n    </md-button>\r\n  </md-content>\r\n</md-sidenav>\r\n<!--data-ng-hide=\"!isAuth\"-->";
+=======
+var html$10 = "<md-sidenav md-component-id=\"sidenav\" class=\"md-sidenav-left\" md-component-id=\"left\" style=\"position:fixed\" md-is-locked-open=\"$mdMedia('gt-sm')\"\r\n  md-whiteframe=\"4\">\r\n  <md-toolbar class=\"md-theme-indigo\">\r\n    <img src=\"img/pokepizza.png\" alt=\"Logo Pizzeria\" height=\"320\" width=\"320\">\r\n    <h1 class=\"md-toolbar-tools\">Pizzeria La Toscana</h1>\r\n  </md-toolbar>\r\n  <md-content layout=\"column\" layout-padding>\r\n    <md-button class=\"md-primary\" ui-sref=\"loginuser\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Login\r\n    </md-button>\r\n    <md-button class=\"md-primary\" ui-sref=\"adduser\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Registro\r\n    </md-button>\r\n    <md-button class=\"md-primary\" ui-sref=\"pizzalist\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Mostrar pizzas\r\n    </md-button>\r\n    <md-button class=\"md-primary\" ui-sref=\"addpizza\" data-ng-hide=\"!isAuth\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Añadir pizza\r\n    </md-button>\r\n    <md-button class=\"md-primary\" ui-sref=\"logout\" data-ng-hide=\"!isAuth\" ng-click=\"$ctrl.closeSidenav()\">\r\n      Logout\r\n    </md-button>\r\n  </md-content>\r\n</md-sidenav>";
+>>>>>>> origin/LoginDev
 
 const ilMenu = {
   template: html$11,

@@ -31,6 +31,7 @@ export class UserService extends BaseService {
         var self = this;
         return this.http.post(super.getRouteToken(), data,{headers: { 'Content-Type': "application/x-www-form-urlencoded" } },
         ).then(function(response){
+<<<<<<< HEAD
             self._localStorage.set('authorizationData', { token: response.data.access_token, mail: user.mail});    
             return response;
         },function error(response){
@@ -44,6 +45,19 @@ export class UserService extends BaseService {
         self._localStorage.remove('authorizationData');
     };
     
+=======
+            self._localStorage.set('authorizationData', { token: response.access_token, mail: user.mail});    
+            return response;
+        },function error(response){
+            return response
+        });
+    }
+
+    logOut(user) {
+        this.localStorageService.remove('authorizationData');
+        this.isAuth = false;
+    };
+>>>>>>> origin/LoginDev
 }
 UserService.$inject = ['$http', 'resolveUrl','localStorageService'];
 App.service('userService', UserService);
