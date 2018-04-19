@@ -13,7 +13,9 @@ export class LogoutUserCtrl {
     }
 
     logoutUser() {
-        this.userService.logout()
+        let self=this;
+        this.userService.logout();
+        self.state.go('loginuser');
     }
 }
 
